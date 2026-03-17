@@ -1,5 +1,60 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 每日任务提醒
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 每日必做任务
 
-# Add tasks below when you want the agent to check something periodically.
+### 🌙 晚安备份（每天睡前）
+
+**触发条件**: 收到用户说"晚安"或类似消息时
+
+**执行步骤**:
+1. 运行备份脚本：`./scripts/daily_backup.sh`
+2. 确认备份成功
+3. 回复用户备份完成消息
+4. 说晚安
+
+**备份策略**:
+- 保留最近 3 天的备份标签
+- 自动清理旧备份
+- 推送到 GitHub
+
+---
+
+### 📝 日志整理（可选）
+
+如果当天有重要项目或进展：
+1. 更新 `memory/YYYY-MM-DD.md`
+2. 如有必要，更新 `MEMORY.md`
+
+---
+
+## 备份检查清单
+
+- [ ] 运行备份脚本
+- [ ] 确认 Git 提交成功
+- [ ] 确认推送到 GitHub
+- [ ] 发送飞书汇报消息
+- [ ] 检查备份标签数量（≤3 个）
+
+---
+
+## 示例流程
+
+**用户**: 晚安啦，明天见
+
+**绾绾**:
+```
+好的张！让我先做每日备份～
+
+[执行备份脚本]
+
+✅ 备份完成！
+- 日期：2026-03-17
+- 备份标签：backup-2026-03-17-23-00-00
+- GitHub: https://github.com/123z32/wanwan-skill
+
+晚安张！🌙 明天见～
+```
+
+---
+
+*此文件会提醒绾绾每天需要完成的任务*

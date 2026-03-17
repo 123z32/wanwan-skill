@@ -195,7 +195,141 @@ curl http://localhost:5000/relay/status
 
 ## 使用指南
 
-### 继电器控制
+### 📦 每日备份
+
+**自动备份时间**: 每天晚上收到"晚安"消息时
+
+**手动备份**:
+```bash
+cd /openclaw_data/.openclaw/workspace
+./scripts/daily_backup.sh
+```
+
+**备份策略**:
+- ✅ 每天自动备份一次
+- ✅ 保留最近 3 天的备份标签
+- ✅ 自动清理旧备份
+- ✅ 推送到 GitHub
+
+**备份内容**:
+- 所有工作区文件
+- SELF_SUMMARY.md (自动更新时间戳)
+- 所有技能和项目代码
+
+**查看备份历史**:
+```bash
+# 查看所有备份标签
+git tag -l "backup-*"
+
+# 查看最近 3 个备份
+git tag -l "backup-*" | tail -3
+
+# 查看某个备份的详情
+git show backup-2026-03-17-16-48-00
+```
+
+---
+
+### 🔄 恢复流程
+
+#### 场景 1: 恢复到昨天的备份
+
+```bash
+# 1. 查看可用备份
+git tag -l "backup-*"
+
+# 2. 找到要恢复的备份标签
+# 例如：backup-2026-03-16-22-30-00
+
+# 3. 恢复到该备份
+git checkout backup-2026-03-16-22-30-00
+
+# 4. 确认文件已恢复
+ls -la
+
+# 5. 如果需要，创建新分支
+git checkout -b restore-2026-03-16
+```
+
+#### 场景 2: 从 GitHub 重新克隆
+
+```bash
+# 1. 备份当前配置（如果有）
+cd /openclaw_data/.openclaw/workspace
+git status
+
+# 2. 克隆最新代码
+cd /openclaw_data/.openclaw/
+rm -rf workspace
+git clone https://github.com/123z32/wanwan-skill.git workspace
+
+# 3. 或者恢复到特定备份
+git clone --branch backup-2026-03-16-22-30-00 https://github.com/123z32/wanwan-skill.git workspace
+```
+
+#### 场景 3: 恢复单个文件
+
+```bash
+# 1. 查看备份历史
+git tag -l "backup-*"
+
+# 2. 查看某个备份中的文件
+git show backup-2026-03-16-22-30-00:scada/scada_controller.py
+
+# 3. 恢复单个文件
+git checkout backup-2026-03-16-22-30-00 -- scada/scada_controller.py
+
+# 4. 确认恢复
+cat scada/scada_controller.py | head -20
+```
+
+#### 场景 4: 完全重建系统
+
+```bash
+# 最坏情况：树莓派系统崩溃，需要重建
+
+# 1. 在新系统上克隆仓库
+git clone https://github.com/123z32/wanwan-skill.git /opt/wanwan-skill
+
+# 2. 安装依赖
+cd /opt/wanwan-skill/scada
+sudo apt-get update
+sudo apt-get install -y python3-flask python3-periphery python3-requests
+
+# 3. 启动服务
+sudo nohup python3 gpio_http_service.py > /tmp/gpio_service.log 2>&1 &
+
+# 4. 验证服务
+curl http://localhost:5000/health
+
+# 5. 重新配置 OpenClaw
+# (需要重新配置 OpenClaw 工作区路径)
+```
+
+---
+
+### 📊 备份管理命令
+
+```bash
+# 查看所有备份
+git tag -l "backup-*" | sort
+
+# 查看备份数量
+git tag -l "backup-*" | wc -l
+
+# 删除特定备份
+git tag -d backup-2026-03-15-22-30-00
+
+# 推送标签到 GitHub
+git push origin --tags
+
+# 从 GitHub 获取所有备份
+git fetch --tags
+```
+
+---
+
+### 🔧 继电器控制
 
 **硬件接线**:
 ```
