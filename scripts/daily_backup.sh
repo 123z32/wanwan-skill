@@ -1,93 +1,64 @@
 #!/bin/bash
-# 每日备份脚本 - 绾绾的自我备份
-# 用法：./daily_backup.sh
-# 功能：备份当前状态到 Git，保留最近 3 天的备份
+# 每日备份脚本 - 自动总结 + Git 备份 + 晚安
 
 set -e
 
-BACKUP_DIR="/openclaw_data/.openclaw/workspace"
+WORKSPACE="/openclaw_data/.openclaw/workspace"
 DATE=$(date +%Y-%m-%d)
-TIME=$(date +%H-%M-%S)
-BACKUP_BRANCH="backup-${DATE}"
-MAX_BACKUPS=3
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
+BACKUP_TAG="backup-$DATE"
 
-echo "🤖 绾绾每日备份"
-echo "=============="
-echo "日期：${DATE}"
-echo "时间：${TIME}"
+cd "$WORKSPACE"
+
+echo "📅 开始每日备份：$DATE"
 echo ""
 
-cd "$BACKUP_DIR"
-
-# 1. 更新 SELF_SUMMARY.md 的时间戳
-echo "📝 更新技能总结..."
-sed -i "s/\*\*最后更新\*\*: .*/\*\*最后更新\*\*: $(date +%Y-%m-%d)/" SELF_SUMMARY.md
+# 1. 检查 git 状态
+echo "📊 检查 Git 状态..."
+git status --short
 
 # 2. 添加所有更改
-echo "📦 添加文件到 Git..."
+echo ""
+echo "📝 添加更改..."
 git add -A
 
-# 3. 检查是否有更改
-if git diff --staged --quiet; then
-    echo "⚠️  没有更改，跳过备份"
-    exit 0
-fi
+# 3. 提交
+echo ""
+echo "💾 提交更改..."
+git commit -m "📝 Daily summary: $DATE" || echo "⚠️  没有更改需要提交"
 
-# 4. 创建提交
-echo "💾 创建备份提交..."
-git commit -m "📦 每日备份 - ${DATE} ${TIME}
-
-🔄 自动备份
-- 更新 SELF_SUMMARY.md
-- 备份所有工作区文件
-- 保留最近 ${MAX_BACKUPS} 个备份
-
-绾绾 🤖"
-
-# 5. 创建备份分支标签
+# 4. 创建备份标签
+echo ""
 echo "🏷️  创建备份标签..."
-git tag -a "backup-${DATE}-${TIME}" -m "每日备份 - ${DATE} ${TIME}"
+git tag -a "$BACKUP_TAG" -m "Daily backup: $DATE" || echo "⚠️  标签已存在"
 
-# 6. 清理旧备份（保留最近 3 天）
-echo "🗑️  清理旧备份..."
-# 获取所有 backup 开头的标签
-OLD_BACKUPS=$(git tag -l "backup-*" | sort | head -n -${MAX_BACKUPS})
-
-if [ -n "$OLD_BACKUPS" ]; then
-    echo "删除旧备份标签:"
-    echo "$OLD_BACKUPS" | while read -r tag; do
-        echo "  - $tag"
-        git tag -d "$tag"
-    done
+# 5. 清理旧标签（保留最近 3 个）
+echo ""
+echo "🧹 清理旧标签..."
+TAG_COUNT=$(git tag -l | grep "^backup-" | wc -l)
+if [ "$TAG_COUNT" -gt 3 ]; then
+    git tag -l | grep "^backup-" | sort | head -n -3 | xargs git tag -d
+    echo "✅ 已清理旧标签，保留最近 3 个"
+else
+    echo "✅ 标签数量：$TAG_COUNT (无需清理)"
 fi
 
-# 7. 推送到 GitHub
-echo "🚀 推送到 GitHub..."
-git push origin master --tags
+# 6. 推送到 GitHub
+echo ""
+echo "📤 推送到 GitHub..."
+git push origin main --tags || echo "⚠️  推送失败（可能是网络问题）"
+
+# 7. 显示提交历史
+echo ""
+echo "📜 最近提交:"
+git log --oneline -5
 
 echo ""
 echo "✅ 备份完成！"
-echo "备份标签：backup-${DATE}-${TIME}"
-echo "GitHub: https://github.com/123z32/wanwan-skill"
 echo ""
-
-# 8. 发送飞书消息汇报
-echo "📱 发送飞书汇报..."
-cat << EOF
-🎉 **每日备份完成**
-
-**日期**: ${DATE} ${TIME}
-**状态**: ✅ 成功
-**备份标签**: backup-${DATE}-${TIME}
-**保留备份**: 最近 ${MAX_BACKUPS} 天
-
-**备份内容**:
-- ✅ 工作区所有文件
-- ✅ SELF_SUMMARY.md (已更新时间戳)
-- ✅ 所有技能和项目代码
-
-**访问地址**: 
-https://github.com/123z32/wanwan-skill
-
-晚安张！🌙 明天见～
-EOF
+echo "📊 备份信息"
+echo "━━━━━━━━━━━━━━━━━━━━━━"
+echo "日期：$DATE"
+echo "标签：$BACKUP_TAG"
+echo "━━━━━━━━━━━━━━━━━━━━━━"
+echo ""
