@@ -44,7 +44,7 @@ from periphery import GPIO
 GPIO_CHIP = 4           # GPIO 芯片编号
 LED_PIN = 17            # LED 引脚 (输出)
 LIGHT_SENSOR_PIN = 27   # 光敏电阻引脚 (输入)
-MODBUS_PORT = 5021      # Modbus TCP 端口 (5020 可能被占用)
+MODBUS_PORT = 5022      # Modbus TCP 端口
 # ==========================================
 
 # 配置日志
@@ -268,12 +268,21 @@ async def handle_client(reader, writer):
                 value = int.from_bytes(payload[2:4], 'big')
                 store["co"][addr] = (value == 0xFF00)
                 
-                # 立即控制 LED
-                if addr == 0 and led:
-                    led.write(store["co"][0])
-                    timestamp = datetime.now().strftime('%H:%M:%S')
-                    state_str = "🟢 ON" if store["co"][0] else "🔴 OFF"
-                    logger.info(f"[{timestamp}] LED: {state_str} | GPIO: ✓")
+                # 立即控制 LED 并同步更新离散输入
+                if addr == 0:
+                    if led:
+                        led.write(store["co"][0])
+                        actual = led.read()
+                        store["di"][0] = actual  # 同步更新离散输入
+                        timestamp = datetime.now().strftime('%H:%M:%S')
+                        state_str = "🟢 ON" if actual else "🔴 OFF"
+                        logger.info(f"[{timestamp}] LED: {state_str} | GPIO: ✓")
+                    else:
+                        # 模拟模式
+                        store["di"][0] = store["co"][0]
+                        timestamp = datetime.now().strftime('%H:%M:%S')
+                        state_str = "🟢 ON" if store["co"][0] else "🔴 OFF"
+                        logger.info(f"[{timestamp}] LED: {state_str} (模拟)")
                 
                 logger.info(f"✍️ 写线圈：地址{addr}, 值={'ON (0xFF00)' if store['co'][addr] else 'OFF (0x0000)'}")
                 
@@ -295,9 +304,17 @@ async def handle_client(reader, writer):
                     store["co"][0] = (value > 0)
                     if led:
                         led.write(store["co"][0])
+                        actual = led.read()
+                        store["di"][0] = actual  # 同步更新离散输入
+                        timestamp = datetime.now().strftime('%H:%M:%S')
+                        state_str = "🟢 ON" if actual else "🔴 OFF"
+                        logger.info(f"[{timestamp}] LED: {state_str} | GPIO: ✓")
+                    else:
+                        # 模拟模式
+                        store["di"][0] = store["co"][0]
                         timestamp = datetime.now().strftime('%H:%M:%S')
                         state_str = "🟢 ON" if store["co"][0] else "🔴 OFF"
-                        logger.info(f"[{timestamp}] LED: {state_str} | GPIO: ✓")
+                        logger.info(f"[{timestamp}] LED: {state_str} (模拟)")
                 
                 logger.info(f"✍️ 写寄存器：地址{addr}, 值={value}")
                 
