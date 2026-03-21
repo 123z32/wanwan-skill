@@ -44,9 +44,7 @@ from periphery import GPIO
 GPIO_CHIP = 4           # GPIO 芯片编号
 LED_PIN = 17            # LED 引脚 (输出)
 LIGHT_SENSOR_PIN = 27   # 光敏电阻引脚 (输入)
-MODBUS_PORT = 5020      # Modbus TCP 端口
-SYNC_INTERVAL = 0.1     # 10Hz 同步频率
-SENSOR_INTERVAL = 1.0   # 1Hz 传感器刷新频率
+MODBUS_PORT = 5021      # Modbus TCP 端口 (5020 可能被占用)
 # ==========================================
 
 # 配置日志
@@ -61,13 +59,14 @@ logger = logging.getLogger('Modbus_SCADA')
 led = None
 light_sensor = None
 start_time = None
+last_uptime = 0
 
-# Modbus 存储区
+# Modbus 存储区 (初始值，不主动刷新)
 store = {
     "co": [False] * 100,  # Coils (线圈)
-    "di": [False] * 100,  # Discrete Inputs (离散输入)
+    "di": [False] * 100,  # Discrete Inputs (离散输入) - 仅在读取时更新
     "hr": [0] * 100,      # Holding Registers (保持寄存器)
-    "ir": [0] * 100,      # Input Registers (输入寄存器)
+    "ir": [0] * 100,      # Input Registers (输入寄存器) - 仅在读取时更新
 }
 
 def init_gpio():
@@ -112,62 +111,35 @@ def read_light_sensor():
         logger.error(f"读取光敏电阻失败：{e}")
         return 0
 
-async def sync_hardware():
-    """后台任务：同步 LED 状态 + 光敏电阻数据"""
-    last_led_state = -1
-    last_light_val = -1
+def update_sensor_data():
+    """按需更新传感器数据（仅在 Modbus 读取时调用）"""
+    global last_uptime
     
-    while True:
-        try:
-            # === 1. 同步 LED 控制 ===
-            # 优先检查线圈，其次检查保持寄存器
-            led_status = store["co"][0] or (store["hr"][0] > 0)
-            if led:
-                led.write(bool(led_status))
-                actual = led.read()
-                
-                if last_led_state != led_status:
-                    timestamp = datetime.now().strftime('%H:%M:%S')
-                    state_str = "🟢 ON " if led_status else "🔴 OFF"
-                    verify = "✓" if actual == led_status else "⚠️ 不一致"
-                    logger.info(f"[{timestamp}] LED: {state_str} | GPIO: {verify}")
-                    last_led_state = led_status
-            else:
-                # 模拟模式
-                if last_led_state != led_status:
-                    timestamp = datetime.now().strftime('%H:%M:%S')
-                    state_str = "🟢 ON " if led_status else "🔴 OFF"
-                    logger.info(f"[{timestamp}] LED: {state_str} (模拟)")
-                    last_led_state = led_status
-            
-            # === 2. 读取光敏电阻 ===
-            light_val = read_light_sensor()
-            
-            # 更新离散输入
-            store["di"][0] = bool(led_status)      # LED 状态反馈
-            store["di"][1] = bool(light_val)       # 光敏电阻状态
-            
-            # 更新保持寄存器
-            store["hr"][0] = light_val             # 光敏电阻原始值
-            store["ir"][0] = light_val             # 输入寄存器
-            
-            # 更新运行时间
-            if start_time:
-                uptime = int((datetime.now() - start_time).total_seconds())
-                store["hr"][1] = uptime & 0xFFFF
-                store["ir"][1] = uptime & 0xFFFF
-            
-            # 记录光敏电阻变化
-            if last_light_val != light_val:
-                timestamp = datetime.now().strftime('%H:%M:%S')
-                state_str = "☀️ 亮" if light_val else "🌙 暗"
-                logger.info(f"[{timestamp}] 光敏电阻：{state_str} (GPIO {LIGHT_SENSOR_PIN}={light_val})")
-                last_light_val = light_val
-                
-        except Exception as e:
-            logger.error(f"❌ 同步错误：{e}")
+    try:
+        # 1. 读取 LED 状态
+        led_status = store["co"][0]
+        if led:
+            actual = led.read()
+            store["di"][0] = actual
+        else:
+            store["di"][0] = led_status
         
-        await asyncio.sleep(SYNC_INTERVAL)
+        # 2. 读取光敏电阻
+        light_val = read_light_sensor()
+        store["di"][1] = bool(light_val)
+        store["hr"][0] = light_val
+        store["ir"][0] = light_val
+        
+        # 3. 更新运行时间
+        if start_time:
+            last_uptime = int((datetime.now() - start_time).total_seconds())
+            store["hr"][1] = last_uptime & 0xFFFF
+            store["ir"][1] = last_uptime & 0xFFFF
+        
+        logger.debug(f"📊 传感器数据已更新：LED={store['di'][0]}, 光敏={light_val}, 时间={last_uptime}s")
+        
+    except Exception as e:
+        logger.error(f"❌ 传感器数据更新失败：{e}")
 
 async def handle_client(reader, writer):
     """处理 Modbus TCP 客户端"""
@@ -224,6 +196,9 @@ async def handle_client(reader, writer):
                 qty = int.from_bytes(payload[2:4], 'big')
                 logger.info(f"   读离散输入：地址={addr}, 数量={qty}")
                 
+                # 按需更新传感器数据
+                update_sensor_data()
+                
                 values = store["di"][addr:addr+qty]
                 byte_count = (qty + 7) // 8
                 byte_data = sum((1 << i) for i, v in enumerate(values) if v)
@@ -244,6 +219,9 @@ async def handle_client(reader, writer):
                 addr = int.from_bytes(payload[0:2], 'big')
                 qty = int.from_bytes(payload[2:4], 'big')
                 logger.info(f"   读保持寄存器：地址={addr}, 数量={qty}")
+                
+                # 按需更新传感器数据
+                update_sensor_data()
                 
                 values = store["hr"][addr:addr+qty]
                 byte_count = qty * 2
@@ -266,6 +244,9 @@ async def handle_client(reader, writer):
                 qty = int.from_bytes(payload[2:4], 'big')
                 logger.info(f"   读输入寄存器：地址={addr}, 数量={qty}")
                 
+                # 按需更新传感器数据
+                update_sensor_data()
+                
                 values = store["ir"][addr:addr+qty]
                 byte_count = qty * 2
                 
@@ -286,6 +267,14 @@ async def handle_client(reader, writer):
                 addr = int.from_bytes(payload[0:2], 'big')
                 value = int.from_bytes(payload[2:4], 'big')
                 store["co"][addr] = (value == 0xFF00)
+                
+                # 立即控制 LED
+                if addr == 0 and led:
+                    led.write(store["co"][0])
+                    timestamp = datetime.now().strftime('%H:%M:%S')
+                    state_str = "🟢 ON" if store["co"][0] else "🔴 OFF"
+                    logger.info(f"[{timestamp}] LED: {state_str} | GPIO: ✓")
+                
                 logger.info(f"✍️ 写线圈：地址{addr}, 值={'ON (0xFF00)' if store['co'][addr] else 'OFF (0x0000)'}")
                 
                 response = bytearray()
@@ -301,9 +290,14 @@ async def handle_client(reader, writer):
                 addr = int.from_bytes(payload[0:2], 'big')
                 value = int.from_bytes(payload[2:4], 'big')
                 store["hr"][addr] = value
-                # 如果写的是地址 0，同步到线圈
+                # 如果写的是地址 0，同步到线圈并控制 LED
                 if addr == 0:
                     store["co"][0] = (value > 0)
+                    if led:
+                        led.write(store["co"][0])
+                        timestamp = datetime.now().strftime('%H:%M:%S')
+                        state_str = "🟢 ON" if store["co"][0] else "🔴 OFF"
+                        logger.info(f"[{timestamp}] LED: {state_str} | GPIO: ✓")
                 
                 logger.info(f"✍️ 写寄存器：地址{addr}, 值={value}")
                 
@@ -390,13 +384,11 @@ async def run_server():
     logger.info(f"    监听端口：{MODBUS_PORT}")
     logger.info(f"    LED 引脚：GPIO {LED_PIN} (输出)")
     logger.info(f"    光敏电阻：GPIO {LIGHT_SENSOR_PIN} (输入)")
-    logger.info(f"    同步频率：{int(1/SYNC_INTERVAL)} Hz")
-    logger.info(f"    传感器刷新：{int(1/SENSOR_INTERVAL)} Hz")
+    logger.info(f"    工作模式：按需读取 (上位机请求时才刷新)")
     logger.info("\n    等待上位机 (LabVIEW) 连接...")
     logger.info("=" * 60 + "\n")
     
-    # 启动后台同步任务
-    asyncio.create_task(sync_hardware())
+    # 不需要后台同步任务，按需读取
     
     # 启动 TCP 服务器
     server = await asyncio.start_server(handle_client, '0.0.0.0', MODBUS_PORT)
