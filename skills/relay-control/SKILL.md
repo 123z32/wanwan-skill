@@ -1,26 +1,36 @@
 ---
 name: relay-control
 description: |
-  Control GPIO relay via Feishu messages. 
-  Activate when user mentions 继电器 (relay), 打开 (turn on), 关闭 (turn off), 开关 (switch).
+  Control GPIO LED and light sensor via Feishu messages. 
+  Activate when user mentions LED, 灯，光敏电阻，打开 (turn on), 关闭 (turn off), 开关 (switch).
 ---
 
-# 继电器控制技能
+# LED 控制技能
 
 ## 用途
 
-通过飞书消息控制树莓派 GPIO 继电器。
+通过飞书消息控制树莓派 GPIO LED，并读取光敏电阻状态。
+
+## 硬件配置
+
+| 组件 | GPIO 引脚 | 类型 |
+|------|----------|------|
+| LED | GPIO 17 | 输出 |
+| 光敏电阻 | GPIO 27 | 输入 |
 
 ## 命令
 
 用户可以通过以下飞书消息控制：
 
-- "打开继电器" → 打开
-- "关闭继电器" → 关闭
-- "切换继电器" → 切换状态
-- "继电器状态" → 查看状态
-- "开灯" → 打开（如果继电器控制灯）
-- "关灯" → 关闭
+### LED 控制
+- "打开 LED" / "开灯" → 打开
+- "关闭 LED" / "关灯" → 关闭
+- "切换 LED" → 切换状态
+- "LED 状态" → 查看状态
+- "LED 闪烁" → 闪烁 3 次
+
+### 光敏电阻读取
+- "光敏电阻" / "光线强度" / "读取光敏" → 读取环境光状态
 
 ## 实现
 
@@ -51,15 +61,31 @@ description: |
 
 ### 响应格式
 
-成功：
+**LED 控制成功**：
 ```
-✅ 继电器已打开
+💡 LED 已打开
 ```
 
-失败：
+**光敏电阻读取成功**：
+```
+📊 光敏电阻 (GPIO 27): ☀️ 亮 (HIGH)
+```
+
+**失败**：
 ```
 ❌ 失败：无法连接到 GPIO 服务
 ```
+
+## API 端点
+
+| 端点 | 方法 | 功能 |
+|------|------|------|
+| `/led/on` | POST | 打开 LED |
+| `/led/off` | POST | 关闭 LED |
+| `/led/toggle` | POST | 切换状态 |
+| `/led/status` | GET | 获取状态 |
+| `/led/pulse` | POST | 闪烁 |
+| `/sensor/light` | GET | 读取光敏电阻 |
 
 ## 安全限制
 
@@ -70,6 +96,7 @@ description: |
 ## 扩展
 
 可以添加：
+- 自动模式（天黑自动开灯）
 - 定时任务（每天早上 8 点开灯）
-- 温度联动（温度过高自动开风扇）
+- 亮度阈值调节
 - 语音控制（通过飞书语音消息）
