@@ -44,7 +44,7 @@ from periphery import GPIO
 GPIO_CHIP = 4           # GPIO 芯片编号
 LED_PIN = 17            # LED 引脚 (输出)
 LIGHT_SENSOR_PIN = 27   # 光敏电阻引脚 (输入)
-MODBUS_PORT = 5022      # Modbus TCP 端口
+MODBUS_PORT = 5023      # Modbus TCP 端口
 # ==========================================
 
 # 配置日志
@@ -285,14 +285,16 @@ async def handle_client(reader, writer):
                         logger.info(f"[{timestamp}] LED: {state_str} (模拟)")
                 
                 logger.info(f"✍️ 写线圈：地址{addr}, 值={'ON (0xFF00)' if store['co'][addr] else 'OFF (0x0000)'}")
+                logger.debug(f"📤 响应：事务 ID={trans_id}, Length=6, FC=0x05")
                 
+                # 写单个线圈响应：Length = 1 (Unit ID) + 1 (FC) + 4 (Data) = 6
                 response = bytearray()
                 response.extend(trans_id.to_bytes(2, 'big'))
                 response.extend(b'\x00\x00')
-                response.extend(b'\x00\x04')
+                response.extend(b'\x00\x06')  # 修复：Length = 6
                 response.append(unit_id)
                 response.append(0x05)
-                response.extend(payload)
+                response.extend(payload)  # 原样返回地址 + 值 (4 字节)
             
             # ========== 功能码 06: 写单个寄存器 ==========
             elif fc == 0x06:
@@ -318,13 +320,14 @@ async def handle_client(reader, writer):
                 
                 logger.info(f"✍️ 写寄存器：地址{addr}, 值={value}")
                 
+                # 写单个寄存器响应：Length = 1 (Unit ID) + 1 (FC) + 4 (Data) = 6
                 response = bytearray()
                 response.extend(trans_id.to_bytes(2, 'big'))
                 response.extend(b'\x00\x00')
-                response.extend(b'\x00\x04')
+                response.extend(b'\x00\x06')  # 修复：Length = 6
                 response.append(unit_id)
                 response.append(0x06)
-                response.extend(payload)
+                response.extend(payload)  # 原样返回地址 + 值 (4 字节)
             
             # ========== 功能码 15 (0x0F): 写多个线圈 ==========
             elif fc == 0x0F:
@@ -340,13 +343,14 @@ async def handle_client(reader, writer):
                 
                 logger.info(f"✍️ 写多个线圈：地址{addr}, 数量={qty}")
                 
+                # 写多个线圈响应：Length = 1 (Unit ID) + 1 (FC) + 2 (Addr) + 2 (Qty) = 6
                 response = bytearray()
                 response.extend(trans_id.to_bytes(2, 'big'))
                 response.extend(b'\x00\x00')
-                response.extend(b'\x00\x04')
+                response.extend(b'\x00\x06')  # 修复：Length = 6
                 response.append(unit_id)
                 response.append(0x0F)
-                response.extend(payload[0:4])
+                response.extend(payload[0:4])  # 返回地址 + 数量
             
             # ========== 功能码 16 (0x10): 写多个寄存器 ==========
             elif fc == 0x10:
@@ -364,13 +368,14 @@ async def handle_client(reader, writer):
                 
                 logger.info(f"✍️ 写多个寄存器：地址{addr}, 值={store['hr'][addr]}")
                 
+                # 写多个寄存器响应：Length = 1 (Unit ID) + 1 (FC) + 2 (Addr) + 2 (Qty) = 6
                 response = bytearray()
                 response.extend(trans_id.to_bytes(2, 'big'))
                 response.extend(b'\x00\x00')
-                response.extend(b'\x00\x04')
+                response.extend(b'\x00\x06')  # 修复：Length = 6
                 response.append(unit_id)
                 response.append(0x10)
-                response.extend(payload[0:4])
+                response.extend(payload[0:4])  # 返回地址 + 数量
             
             else:
                 logger.warning(f"⚠️ 不支持的功能码：0x{fc:02X}")
