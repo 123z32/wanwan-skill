@@ -36,7 +36,7 @@ if m:
     gszzl = d.get('gszzl','?')
     dwjz = d.get('dwjz','?')
     pct = float(gszzl) if gszzl != '?' else 0
-    arrow = '🟢' if pct > 0 else '🔴' if pct < 0 else '⚪'
+    arrow = '🔴' if pct > 0 else '🟢' if pct < 0 else '⚪'  # A股涨红跌绿
     alert = '⚡' if abs(pct) > 3 else ''
     print(f'{arrow} $NAME($CODE): {gsz} ({gszzl}%) {alert}')
 else:
