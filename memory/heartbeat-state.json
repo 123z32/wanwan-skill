@@ -3,8 +3,9 @@
     "email": null,
     "calendar": null,
     "weather": null,
-    "aiLearning": 1711252740,
-    "gitBackup": 1711252740
+    "aiLearning": 1711284720,
+    "gitBackup": 1711284720
   },
-  "lastHeartbeat": "2026-03-24T04:59:00Z"
+  "lastHeartbeat": "2026-03-24T13:32:00Z",
+  "notes": "web_search 全天不可用，web_fetch 部分时段可用"
 }
