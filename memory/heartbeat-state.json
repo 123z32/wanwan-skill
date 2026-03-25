@@ -4,8 +4,10 @@
     "calendar": null,
     "weather": null,
     "aiLearning": 1711252320,
-    "gitBackup": 1711295160
+    "gitBackup": 1711295160,
+    "fundReport": 1774422600
   },
-  "lastHeartbeat": "2026-03-24T16:46:00Z",
-  "lastDailySummary": "2026-03-24"
+  "lastHeartbeat": "2026-03-25T07:10:00Z",
+  "lastDailySummary": "2026-03-24",
+  "lastFundReport": "2026-03-25"
 }

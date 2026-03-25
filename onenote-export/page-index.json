@@ -1,0 +1,1668 @@
+[
+  {
+    "id": "0-730454fce38c432ba128989ed3fcfe58!1-9E53C6D99C1E5AD1!s2c4cbf578d814fb6a405cad117f96765",
+    "title": "名词解析",
+    "notebook": "Agent",
+    "section": "新分区 1",
+    "modified": "2026-03-15T10:20:01Z"
+  },
+  {
+    "id": "0-70a38944a1064143ba8d439e9fb38686!1-9E53C6D99C1E5AD1!s19a8e19e81824efa96fdba5b882cb0e5",
+    "title": "",
+    "notebook": "android",
+    "section": "新分区 1",
+    "modified": "2025-09-09T02:37:19Z"
+  },
+  {
+    "id": "0-30bbdafa982f09e931ed5c8763434df1!1-9E53C6D99C1E5AD1!224",
+    "title": "函数的定义",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-06-12T09:47:45Z"
+  },
+  {
+    "id": "0-a62a9ea734430b56254f7c6fdae946c8!1-9E53C6D99C1E5AD1!224",
+    "title": "函数的分类",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-06-12T09:42:03Z"
+  },
+  {
+    "id": "0-dbab59d8835e0211245f38899209ad21!1-9E53C6D99C1E5AD1!224",
+    "title": "函数基本概念",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-06-12T09:39:26Z"
+  },
+  {
+    "id": "0-bbe3f218cade039a049bf6a365683afd!1-9E53C6D99C1E5AD1!224",
+    "title": "printf函数",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-06-06T14:03:08Z"
+  },
+  {
+    "id": "0-d7633bddb85e0e9007bcb5d1478af53e!1-9E53C6D99C1E5AD1!224",
+    "title": "putchar和getchar",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-05-24T03:06:55Z"
+  },
+  {
+    "id": "0-b7784b0cf33b02551dc2b5a8f229d91b!1-9E53C6D99C1E5AD1!224",
+    "title": "Scanf函数",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-05-24T03:06:22Z"
+  },
+  {
+    "id": "0-730e263312b4047b0e6088915499b1ca!1-9E53C6D99C1E5AD1!224",
+    "title": "变量的作用域（局部变量和全局变量）",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-05-23T15:03:47Z"
+  },
+  {
+    "id": "0-991dbbb3973c7a6994cacabe5190ba7c!1-9E53C6D99C1E5AD1!224",
+    "title": "",
+    "notebook": "c语言",
+    "section": "函数",
+    "modified": "2024-04-25T14:22:23.491Z"
+  },
+  {
+    "id": "0-e77752ecd0e94682858b84f46b5dab10!1-9E53C6D99C1E5AD1!264",
+    "title": "",
+    "notebook": "c语言",
+    "section": "基础与类型转换",
+    "modified": "2025-12-28T10:48:07.952Z"
+  },
+  {
+    "id": "0-fcc64c0cce8c4ab4a4a0acf55f848469!1-9E53C6D99C1E5AD1!264",
+    "title": "C enum(枚举)",
+    "notebook": "c语言",
+    "section": "基础与类型转换",
+    "modified": "2025-12-28T06:17:00Z"
+  },
+  {
+    "id": "0-191b3df6436e44a3ad296d30522ac0b9!1-9E53C6D99C1E5AD1!264",
+    "title": "整型数据",
+    "notebook": "c语言",
+    "section": "基础与类型转换",
+    "modified": "2024-06-07T03:41:52Z"
+  },
+  {
+    "id": "0-1af4be11d9f0422b89ab8ec9e5c19808!1-9E53C6D99C1E5AD1!264",
+    "title": "基础",
+    "notebook": "c语言",
+    "section": "基础与类型转换",
+    "modified": "2024-06-07T03:41:14Z"
+  },
+  {
+    "id": "0-dae92e28cbb34cff992356a47f81b01c!1-9E53C6D99C1E5AD1!264",
+    "title": "类型转换",
+    "notebook": "c语言",
+    "section": "基础与类型转换",
+    "modified": "2024-06-04T13:57:05Z"
+  },
+  {
+    "id": "0-4e3ca704108142e68b59ac511a443c5a!1-9E53C6D99C1E5AD1!264",
+    "title": "主程序注意点与其他写法.",
+    "notebook": "c语言",
+    "section": "基础与类型转换",
+    "modified": "2024-06-04T13:55:42Z"
+  },
+  {
+    "id": "0-fe30e3582f804ad4b777a40e4fa6e8ef!1-9E53C6D99C1E5AD1!264",
+    "title": "c语言数据类型",
+    "notebook": "c语言",
+    "section": "基础与类型转换",
+    "modified": "2024-06-04T13:55:42Z"
+  },
+  {
+    "id": "0-e1612be4c1fa447ea8d41e61b410c029!1-9E53C6D99C1E5AD1!263",
+    "title": "指针",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2025-10-31T14:40:47Z"
+  },
+  {
+    "id": "0-b9c77a5888dd4c56bc09697b10e2d672!1-9E53C6D99C1E5AD1!263",
+    "title": "选择结构(switch)",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-23T07:21:01Z"
+  },
+  {
+    "id": "0-cd6c6b0512ea4ba2bad7d53267b1737c!1-9E53C6D99C1E5AD1!263",
+    "title": "循环嵌套",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-06T14:02:43Z"
+  },
+  {
+    "id": "0-a8cfda45b3a748e8a3ac6cda2a44fef5!1-9E53C6D99C1E5AD1!263",
+    "title": "(return、break、continue、goto)",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-06T14:00:28Z"
+  },
+  {
+    "id": "0-ec8d429475fd454281215709947d9b4a!1-9E53C6D99C1E5AD1!263",
+    "title": "循环结构(for)",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-06T13:53:13Z"
+  },
+  {
+    "id": "0-1cdf171a8cf04467b847c044e120c379!1-9E53C6D99C1E5AD1!263",
+    "title": "循环结构(do while)",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-06T13:48:23Z"
+  },
+  {
+    "id": "0-0ac415ec9d6c40fe895218055136556e!1-9E53C6D99C1E5AD1!263",
+    "title": "循环结构(while循环)",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-06T13:45:26Z"
+  },
+  {
+    "id": "0-1a8419254a3e41609d1e8ee96afc77de!1-9E53C6D99C1E5AD1!263",
+    "title": "if和Switch转换",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-05T14:36:25Z"
+  },
+  {
+    "id": "0-e48eb41824cb457f93727da6387d49a7!1-9E53C6D99C1E5AD1!263",
+    "title": "选择结构(if)",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-05T14:29:02Z"
+  },
+  {
+    "id": "0-0ea5276ca92e436cb47fe882f1f45b0b!1-9E53C6D99C1E5AD1!263",
+    "title": "流程控制基本概念",
+    "notebook": "c语言",
+    "section": "循环",
+    "modified": "2024-06-05T14:19:15Z"
+  },
+  {
+    "id": "0-2343757cc2944aba94c216d63fb46bc7!1-9E53C6D99C1E5AD1!256",
+    "title": "字数统计",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-21T03:17:14Z"
+  },
+  {
+    "id": "0-ad841286f8bf426cbf5ec5e66415634d!1-9E53C6D99C1E5AD1!256",
+    "title": "三目运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-04T13:54:04Z"
+  },
+  {
+    "id": "0-4cecab6d19a745ef8cb2a81520a690b8!1-9E53C6D99C1E5AD1!256",
+    "title": "逻辑运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-04T13:53:01Z"
+  },
+  {
+    "id": "0-1e7bfb707e4948a5acaea293dcb4c578!1-9E53C6D99C1E5AD1!256",
+    "title": "关系运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-04T13:50:48Z"
+  },
+  {
+    "id": "0-afec4309207940c9bbe7466beb1b3ff6!1-9E53C6D99C1E5AD1!256",
+    "title": "逗号运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-04T13:45:56Z"
+  },
+  {
+    "id": "0-6c3d9a38c32b43e3bc360c58b2c4c7ca!1-9E53C6D99C1E5AD1!256",
+    "title": "sizeof运算符(计算内存字节数）",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-04T13:44:04Z"
+  },
+  {
+    "id": "0-8db70aadeb92437d8bb4ebb4af6da20c!1-9E53C6D99C1E5AD1!256",
+    "title": "自增自减运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-04T13:42:10Z"
+  },
+  {
+    "id": "0-fc9ff574c7ee4618b0ffa21293d82e11!1-9E53C6D99C1E5AD1!256",
+    "title": "赋值运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-06-04T13:34:40Z"
+  },
+  {
+    "id": "0-3fc4645b7b2041079d9f9122f22d89c1!1-9E53C6D99C1E5AD1!256",
+    "title": "算数运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-05-24T03:18:34Z"
+  },
+  {
+    "id": "0-8534ec8b6dad4ceb965ad2c047565521!1-9E53C6D99C1E5AD1!256",
+    "title": "运算符",
+    "notebook": "c语言",
+    "section": "运算符",
+    "modified": "2024-05-24T03:12:24Z"
+  },
+  {
+    "id": "0-6eab6db4efa4473d9ec4c1d41e8ebe88!1-9E53C6D99C1E5AD1!216",
+    "title": "元器件选型基本原则：",
+    "notebook": "EDA 设计与开发知识点",
+    "section": "新分区 1",
+    "modified": "2026-01-11T06:55:32Z"
+  },
+  {
+    "id": "0-b1ca9f4ab85e4fe797a0ab6efac99cb2!1-9E53C6D99C1E5AD1!216",
+    "title": "数制",
+    "notebook": "EDA 设计与开发知识点",
+    "section": "新分区 1",
+    "modified": "2025-10-31T13:09:20Z"
+  },
+  {
+    "id": "0-fd7d3e02d0cf463aa1d41da493a12291!1-9E53C6D99C1E5AD1!216",
+    "title": "滤波器作为一种选频装置，是信号处理中的一个重要概念。目前主要由低通滤波器、高通滤波器和带通滤波器三种，当然也可以按照电路工作原理分为无源和有源滤波器两大类。以下是低通、高通、带通滤波器的原理详述。",
+    "notebook": "EDA 设计与开发知识点",
+    "section": "新分区 1",
+    "modified": "2024-04-04T15:22:48Z"
+  },
+  {
+    "id": "0-44362565f7314b378aaa48afc3e2a0d0!1-9E53C6D99C1E5AD1!216",
+    "title": "运算放大器（简称运放），它的英文全称是Operation Amplifier,简写为OP AMP。顾名思义，运算放大器的初衷是用于执行数学计算，比如加、减、乘、除、函数运算等。在当前的技术条件下，运算放大器的数学运算功能已不再突出，现在主要应用于信号放大及有源滤波器设计。",
+    "notebook": "EDA 设计与开发知识点",
+    "section": "新分区 1",
+    "modified": "2024-04-04T15:20:48Z"
+  },
+  {
+    "id": "0-a481a6bb75d84747b0264ebae8334257!1-9E53C6D99C1E5AD1!216",
+    "title": "基础门电路",
+    "notebook": "EDA 设计与开发知识点",
+    "section": "新分区 1",
+    "modified": "2024-04-04T15:16:28Z"
+  },
+  {
+    "id": "0-b5fde1f324ae4511a4f6a41d967cbe5d!1-9E53C6D99C1E5AD1!220",
+    "title": "客观题",
+    "notebook": "EDA 设计与开发知识点",
+    "section": "新分区 2",
+    "modified": "2024-04-09T14:11:58Z"
+  },
+  {
+    "id": "0-6d0c5ecb94804a919f70e5fa3658cc8a!1-9E53C6D99C1E5AD1!s5aa9d569641d42ce8a56ff67c814d0b5",
+    "title": "将modesim做为vivadao仿真",
+    "notebook": "FPGA",
+    "section": "注意事项",
+    "modified": "2026-01-21T07:16:40Z"
+  },
+  {
+    "id": "0-99b6ff94179f466b887ac20f416e6128!1-9E53C6D99C1E5AD1!s5aa9d569641d42ce8a56ff67c814d0b5",
+    "title": "修改了vivadao的编译器为gVim9.1???修改了gVim9.1的配置文件",
+    "notebook": "FPGA",
+    "section": "注意事项",
+    "modified": "2026-01-10T10:28:39Z"
+  },
+  {
+    "id": "0-c628ac32ea62440e9238799c7398b3c3!1-9E53C6D99C1E5AD1!scabb8a2ab8fe432082b118582b0c41e8",
+    "title": "",
+    "notebook": "Labview",
+    "section": "新分区 1",
+    "modified": "2025-11-24T02:22:04.344Z"
+  },
+  {
+    "id": "0-171ac2906ab943bdb70c4c652ab09fad!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "帮助和文档",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-28T17:15:44Z"
+  },
+  {
+    "id": "0-156426ab860c48308f6cd7bdcb24dfef!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "编程和脚本",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-28T17:15:22Z"
+  },
+  {
+    "id": "0-ef41010c1c3e480393f10b126fa93a48!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "二维图和三维图",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-28T17:10:20Z"
+  },
+  {
+    "id": "0-32ea4764f5044a669209fd24b14c003b!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "调用函数",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-28T17:05:16Z"
+  },
+  {
+    "id": "0-2396e769acaf442e8205ae0713096858!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "文本和字符",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-28T16:59:30Z"
+  },
+  {
+    "id": "0-4f18ed0e7fd24b9fb2193e357c241114!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "工作区变量",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-28T16:51:43Z"
+  },
+  {
+    "id": "0-2a16c1df24554d998b08ab7af6e35e9a!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "数组索引",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-24T07:57:00Z"
+  },
+  {
+    "id": "0-6bda3c10df894b69bc1f7d284c3bc39d!1-9E53C6D99C1E5AD1!s9b2a8b4df63c4848a74ddbd7d74f0041",
+    "title": "矩阵和数组",
+    "notebook": "MATLAB",
+    "section": "新分区 1",
+    "modified": "2025-11-24T07:50:15Z"
+  },
+  {
+    "id": "0-10f5d6b9f20f478d8efa2afe3c5c77fa!1-9E53C6D99C1E5AD1!227",
+    "title": "",
+    "notebook": "python",
+    "section": "新分区 1",
+    "modified": "2024-04-19T03:05:11.874Z"
+  },
+  {
+    "id": "0-0609032f499849b384638e03e8f95b76!1-9E53C6D99C1E5AD1!269",
+    "title": "DS18B20温度传感器(单总线)",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2025-03-26T13:42:54Z"
+  },
+  {
+    "id": "0-6dba926c69f14a579c3f0fec8ef2a466!1-9E53C6D99C1E5AD1!269",
+    "title": "矩阵键盘",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2025-03-21T08:57:10Z"
+  },
+  {
+    "id": "0-d968cdbf1e014d45afc1e2a8ef21881b!1-9E53C6D99C1E5AD1!269",
+    "title": "串口通信实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2025-01-18T06:29:56Z"
+  },
+  {
+    "id": "0-6627aafc26334654bd86f7429b568dc9!1-9E53C6D99C1E5AD1!269",
+    "title": "定时器中断",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-11-26T08:09:57Z"
+  },
+  {
+    "id": "0-1bc5007aecaf4aad8b0ea088ffd3f2fb!1-9E53C6D99C1E5AD1!269",
+    "title": "外部中断",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-11-26T07:40:32Z"
+  },
+  {
+    "id": "0-df1a78471c614ba1a19e443e3950b767!1-9E53C6D99C1E5AD1!269",
+    "title": "中断系统",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-11-22T10:19:01Z"
+  },
+  {
+    "id": "0-065837d38af7453a80758f24bf7639f4!1-9E53C6D99C1E5AD1!269",
+    "title": "LCD12864液晶显示实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-11-17T13:21:23Z"
+  },
+  {
+    "id": "0-bcc62cc02b714ccba9e39bd8db937f09!1-9E53C6D99C1E5AD1!269",
+    "title": "LCD1602液晶显示实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-11-10T14:50:17Z"
+  },
+  {
+    "id": "0-e70f934a90714c7a9fa59427b24f76ea!1-9E53C6D99C1E5AD1!269",
+    "title": "DAC数模转换实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-11-09T15:10:27Z"
+  },
+  {
+    "id": "0-8168eed1551d4788ab09dda2e24fbc3e!1-9E53C6D99C1E5AD1!269",
+    "title": "ADC模数转换实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-11-08T14:27:13Z"
+  },
+  {
+    "id": "0-175f4993563e4a0aa7a56ba304399402!1-9E53C6D99C1E5AD1!269",
+    "title": "红外遥控实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-10-20T08:18:31Z"
+  },
+  {
+    "id": "0-7ff33f4b87dc4f4595dfbe7b3a94b2b1!1-9E53C6D99C1E5AD1!269",
+    "title": "DS1202时钟实验(SPI协议)",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-10-13T09:31:42Z"
+  },
+  {
+    "id": "0-56c6f5c583bb47d0813ce801ca916a02!1-9E53C6D99C1E5AD1!269",
+    "title": "I2C-EEPROM 实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-26T10:18:36Z"
+  },
+  {
+    "id": "0-22e1f6140705488ebae021941ab6a7d5!1-9E53C6D99C1E5AD1!269",
+    "title": "创建多文件工程",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-20T14:58:35Z"
+  },
+  {
+    "id": "0-4383b63144cd4366a170a48df509c3fc!1-9E53C6D99C1E5AD1!269",
+    "title": "步进电机",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-11T01:30:28Z"
+  },
+  {
+    "id": "0-9c47c6b885a94408a617e655c45841b8!1-9E53C6D99C1E5AD1!269",
+    "title": "直流电机实验",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-10T14:25:20Z"
+  },
+  {
+    "id": "0-08a9a231a3b64abba8b07b20af83d2e7!1-9E53C6D99C1E5AD1!269",
+    "title": "LED点阵",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-08T10:16:43Z"
+  },
+  {
+    "id": "0-f0af8ee7c3734e50bc47a5b7d8dcfd96!1-9E53C6D99C1E5AD1!269",
+    "title": "IO扩展(串转并)-74HC595",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-07T08:01:19Z"
+  },
+  {
+    "id": "0-81d8addbbc6a4b70abfb543997830ba3!1-9E53C6D99C1E5AD1!269",
+    "title": "动态数码管",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-04T10:05:21Z"
+  },
+  {
+    "id": "0-af6ed4ccdeab4f2a990b0761ca50d46d!1-9E53C6D99C1E5AD1!269",
+    "title": "独立按键",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-03T09:37:36Z"
+  },
+  {
+    "id": "0-6f110ecc53984e6fbbf8c9423b5fac50!1-9E53C6D99C1E5AD1!269",
+    "title": "静态数码管",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-02T13:16:47Z"
+  },
+  {
+    "id": "0-a37f4438bcd64a7ea516aab4415fc64a!1-9E53C6D99C1E5AD1!269",
+    "title": "蜂鸣器BEEP",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-02T12:00:25Z"
+  },
+  {
+    "id": "0-ac8c50824f6841e2beeda8ff95509c55!1-9E53C6D99C1E5AD1!269",
+    "title": "LED",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-09-02T11:45:09Z"
+  },
+  {
+    "id": "0-1b1bfcd49c6541f888bf9f9b08f159bc!1-9E53C6D99C1E5AD1!269",
+    "title": "利用KELE软件仿真查找延时时间",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-08-21T12:50:02Z"
+  },
+  {
+    "id": "0-011910dc4bc64436a71fb30c0ebf68df!1-9E53C6D99C1E5AD1!269",
+    "title": "P0.P1.P2.P3端口结构",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-08-18T14:19:48Z"
+  },
+  {
+    "id": "0-ab6b459040384276bba65bac1183d45c!1-9E53C6D99C1E5AD1!269",
+    "title": "GPIO 概念",
+    "notebook": "单片机",
+    "section": "89c52（c51）",
+    "modified": "2024-08-18T13:56:26Z"
+  },
+  {
+    "id": "0-7c120451e06a4ab78d857878ddda1148!1-9E53C6D99C1E5AD1!272",
+    "title": "",
+    "notebook": "单片机",
+    "section": "ESP32",
+    "modified": "2025-01-18T13:14:31Z"
+  },
+  {
+    "id": "0-6ab585fa059647ae8b75d8e83c82d93c!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "DS18020",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-14T16:46:51Z"
+  },
+  {
+    "id": "0-4ce2fe132d464acea19b86004f7df8a1!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "EEPROM",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-14T16:43:48Z"
+  },
+  {
+    "id": "0-9f316d158b8941f7b52f10429adefd5f!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "UART",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-14T13:47:08Z"
+  },
+  {
+    "id": "0-e475ded12e144f91a076bc0083c2ac43!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "客观题复习",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-14T13:44:39Z"
+  },
+  {
+    "id": "0-99b48a45508f49a6ac7003d9e1be4be0!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "复习大纲",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-11T14:35:22Z"
+  },
+  {
+    "id": "0-2fac4835b52f4254b07a65380eb5c286!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "ADC(PC8591)",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-11T14:25:48Z"
+  },
+  {
+    "id": "0-a620069424b34e5ea6f28ef46382e035!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "KEY",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-11T08:39:58Z"
+  },
+  {
+    "id": "0-e859a1e3899f479e991ed87720abc104!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "超声波",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-11T08:11:37Z"
+  },
+  {
+    "id": "0-44094967bfba4af8a0af6a9cf15995a0!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "DS1302",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-09T11:28:13Z"
+  },
+  {
+    "id": "0-e16027214eb145c2812fb6850fb37784!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "LED",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-06T08:57:42Z"
+  },
+  {
+    "id": "0-bd77ba67e4124b019da037e80aa8dc84!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "继电器与蜂鸣器",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-06T08:57:39Z"
+  },
+  {
+    "id": "0-8b753394e9ed4ebd83ce3a306dfe26ce!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "SMG",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-06-06T05:13:15Z"
+  },
+  {
+    "id": "0-dc84b4517ba84727b8c8667fa6961a18!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "NE555",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-04-12T13:02:08Z"
+  },
+  {
+    "id": "0-bb965724176c43228cab61fd300ce125!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "外部中断",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-04-12T08:07:58Z"
+  },
+  {
+    "id": "0-91d516a5e2814d43b8912e9d3c526a95!1-9E53C6D99C1E5AD1!s99d9fe3c69c547509269318053602ce7",
+    "title": "初始化函数",
+    "notebook": "单片机",
+    "section": "IAP152K61S2",
+    "modified": "2025-04-12T08:05:53Z"
+  },
+  {
+    "id": "0-cb050fb189364e62aabac6e8593479f2!1-9E53C6D99C1E5AD1!271",
+    "title": "OpenClaw 个人 AI 网关部署与运维实战指南",
+    "notebook": "单片机",
+    "section": "Linux",
+    "modified": "2026-03-21T09:42:23Z"
+  },
+  {
+    "id": "0-4a257495e73040c083f174e4a79dbb6e!1-9E53C6D99C1E5AD1!271",
+    "title": "树莓派-安装docker",
+    "notebook": "单片机",
+    "section": "Linux",
+    "modified": "2026-03-16T01:32:55Z"
+  },
+  {
+    "id": "0-b985e20b41654143806737a818222c75!1-9E53C6D99C1E5AD1!271",
+    "title": "树莓派-SSH流程",
+    "notebook": "单片机",
+    "section": "Linux",
+    "modified": "2026-03-15T08:44:55Z"
+  },
+  {
+    "id": "0-9e9e83b581714477a768c975784914d3!1-9E53C6D99C1E5AD1!271",
+    "title": "AGX Thor 本地大模型跨网调用指南 (Ollama + Qwen3.5)",
+    "notebook": "单片机",
+    "section": "Linux",
+    "modified": "2026-03-15T08:38:03Z"
+  },
+  {
+    "id": "0-75b8290003954b63887e3358c8eab3a9!1-9E53C6D99C1E5AD1!271",
+    "title": "AGX SSH流程",
+    "notebook": "单片机",
+    "section": "Linux",
+    "modified": "2026-03-15T08:26:45Z"
+  },
+  {
+    "id": "0-1222673749d74e1ba727e2ab768188da!1-9E53C6D99C1E5AD1!271",
+    "title": "树莓派-查看硬盘",
+    "notebook": "单片机",
+    "section": "Linux",
+    "modified": "2026-03-14T15:02:24Z"
+  },
+  {
+    "id": "0-35919d68facc487086412003455ece76!1-9E53C6D99C1E5AD1!s647df819061d4a08b10987af1157aa5b",
+    "title": "",
+    "notebook": "单片机",
+    "section": "RTOS",
+    "modified": "2025-11-12T09:58:17.492Z"
+  },
+  {
+    "id": "0-f09f1c2e0ba84ca99f02073118dad948!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32寄存器映射",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2025-01-23T09:51:20Z"
+  },
+  {
+    "id": "0-f7b3f630107949fea335518273528cb6!1-9E53C6D99C1E5AD1!270",
+    "title": "三种开发方式",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2025-01-23T07:14:24Z"
+  },
+  {
+    "id": "0-dcbbbc494938430cba3b8621ff7edc2d!1-9E53C6D99C1E5AD1!270",
+    "title": "字数统计",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-09-02T14:24:31Z"
+  },
+  {
+    "id": "0-85a47538cf6646ca8bc14408cd638c6c!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的控制器局域网 (bxCAN)使用",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-10T13:28:18Z"
+  },
+  {
+    "id": "0-e936765ee9c749baaa4f3890d892460e!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的串行外设接口 (SPI)使用",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-10T13:15:18Z"
+  },
+  {
+    "id": "0-30bf8477daf542c6bb489f6cf68e1de4!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的集成电路总线 (I2C/IIC)",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-10T13:11:43Z"
+  },
+  {
+    "id": "0-053fd411818b4f64abebe99a5403f01b!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的直接存储器存取 (DMA)",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-10T13:00:45Z"
+  },
+  {
+    "id": "0-44b7adcbae6c4420bc11932fcd9a7825!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32的模数转换(ADC)",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-10T12:37:59Z"
+  },
+  {
+    "id": "0-7521d4bdacb9469fa0e9eb8ce928e770!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32的低功耗模式",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-10T10:03:03Z"
+  },
+  {
+    "id": "0-07bfafa2f28b49e090a12af2265fcc0e!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的实时时钟 (RTC)",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-10T09:52:14Z"
+  },
+  {
+    "id": "0-07aa74a5cde047a1832ab41914d06d05!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的备份寄存器 (BKP)",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T11:12:19Z"
+  },
+  {
+    "id": "0-4bb60a735cb6443eb3d41b9df3339c63!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32的电源控制 (PWR)",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:58:01Z"
+  },
+  {
+    "id": "0-e91b4eb1dd4d4db69e52b8bd72b6dc28!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32库函数 EXTI_GetFlagStatus（获取中断标志位状态 ）和 EXTI_GetITStatus（获取中断状态 ） 区别",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:48:11Z"
+  },
+  {
+    "id": "0-54878db324894d5fa196abce2e41f66e!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32的外部中断 (EXTI)",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:30:11Z"
+  },
+  {
+    "id": "0-161190ea6fa1466aaf6278b0b03f8233!1-9E53C6D99C1E5AD1!270",
+    "title": "GPIO八种模式",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:29:06Z"
+  },
+  {
+    "id": "0-dd4a9a909a8d4e9da31d2154318102d8!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32的USART使用",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:24:26Z"
+  },
+  {
+    "id": "0-25dd1ab2e5c7490a9b6ec27067d3042c!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中断",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:19:05Z"
+  },
+  {
+    "id": "0-8de4116420b74872933da15ae54ed441!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32的端口复用与重映射",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:11:22Z"
+  },
+  {
+    "id": "0-b23bc700595f461d84fb076cb4efdf96!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32外设",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T10:00:15Z"
+  },
+  {
+    "id": "0-ceb5e6245bf74f34af599480c4f31eac!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的时钟系统",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T09:27:23Z"
+  },
+  {
+    "id": "0-fb1d85ecfa704482b0f9f991fa63e46f!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32中的位段映射",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-09T09:15:35Z"
+  },
+  {
+    "id": "0-0eedfb3251274994a02f46a5b04cec5c!1-9E53C6D99C1E5AD1!270",
+    "title": "Stm32初始化外设时钟",
+    "notebook": "单片机",
+    "section": "STM32",
+    "modified": "2024-06-07T01:29:46Z"
+  },
+  {
+    "id": "0-6cebc904ade94472bef4abef695e5bc6!1-9E53C6D99C1E5AD1!s81796c6f57e8468bbb06fe34f8a4c23e",
+    "title": "H7 DMA",
+    "notebook": "单片机",
+    "section": "STM32_H7",
+    "modified": "2025-09-08T12:57:05Z"
+  },
+  {
+    "id": "0-d0bdab103e494a48a51268ed752a98af!1-9E53C6D99C1E5AD1!s8ac699eba1fc464baa8c0ee92e0ce9e2",
+    "title": "STM32位带操作",
+    "notebook": "单片机",
+    "section": "STM32F103ZET6",
+    "modified": "2025-02-14T15:09:23Z"
+  },
+  {
+    "id": "0-a2b5aa253885488ebe2206047fada6da!1-9E53C6D99C1E5AD1!s8ac699eba1fc464baa8c0ee92e0ce9e2",
+    "title": "STM32时钟系统",
+    "notebook": "单片机",
+    "section": "STM32F103ZET6",
+    "modified": "2025-02-14T13:41:05Z"
+  },
+  {
+    "id": "0-9c3760a5cbb046708c4c84f4f2a1d087!1-9E53C6D99C1E5AD1!s8ac699eba1fc464baa8c0ee92e0ce9e2",
+    "title": "库函数点亮一个LED",
+    "notebook": "单片机",
+    "section": "STM32F103ZET6",
+    "modified": "2025-02-10T12:48:32Z"
+  },
+  {
+    "id": "0-7c978525f8354394ad15fd1c18bef8fb!1-9E53C6D99C1E5AD1!s8ac699eba1fc464baa8c0ee92e0ce9e2",
+    "title": "库函数模板创建",
+    "notebook": "单片机",
+    "section": "STM32F103ZET6",
+    "modified": "2025-02-05T08:04:05Z"
+  },
+  {
+    "id": "0-b92553ec37784061bc9fd1c2ed7eee0e!1-9E53C6D99C1E5AD1!s8ac699eba1fc464baa8c0ee92e0ce9e2",
+    "title": "STM32固件库",
+    "notebook": "单片机",
+    "section": "STM32F103ZET6",
+    "modified": "2025-02-03T08:43:35Z"
+  },
+  {
+    "id": "0-05df905aad7c437b880de5d0dc5f685d!1-9E53C6D99C1E5AD1!s8ac699eba1fc464baa8c0ee92e0ce9e2",
+    "title": "使用寄存器点亮一个LED（闪烁）",
+    "notebook": "单片机",
+    "section": "STM32F103ZET6",
+    "modified": "2025-02-03T06:49:44Z"
+  },
+  {
+    "id": "0-9a5ff98ff2a943c4bd994c7c6b813de2!1-9E53C6D99C1E5AD1!s8ac699eba1fc464baa8c0ee92e0ce9e2",
+    "title": "存储器与寄存器",
+    "notebook": "单片机",
+    "section": "STM32F103ZET6",
+    "modified": "2025-01-24T09:31:48Z"
+  },
+  {
+    "id": "0-8a322fcdd02c07fb27c67e45c9ceb3f2!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "RS-422串行通信接口标准*",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T15:12:24Z"
+  },
+  {
+    "id": "0-c4ea2ff0cb9d0d5f037bd730cef2f888!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "RS232串行通信接口标准*",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T15:12:21Z"
+  },
+  {
+    "id": "0-971fa2c43de50a5b3e2191f754bfd173!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "RS485串行通信接口标准",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T15:08:05Z"
+  },
+  {
+    "id": "0-79d1bd8407a20dcc282f2ee10bc0a934!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "I2C通信总线",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T15:06:46Z"
+  },
+  {
+    "id": "0-98912ab997e60ce338d2848c2f2be39a!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "USART(通用同步异步收发器)",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T15:05:06Z"
+  },
+  {
+    "id": "0-c3b8fb4f37120a131a28284b7f54acd7!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "UART(通用异步收发器)",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T14:48:11Z"
+  },
+  {
+    "id": "0-ccffb756a464041c23b6a558750fd2f5!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "串口通信",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T14:47:20Z"
+  },
+  {
+    "id": "0-4fe818209d9a006104b59d2b6282af62!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "USART/I2C/SPI比较",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T14:46:15Z"
+  },
+  {
+    "id": "0-c12be7371bca09cb32fa46429165e9df!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "通信基础",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T14:37:34Z"
+  },
+  {
+    "id": "0-90d519cdede30609371b16933f3b0bd2!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "SPI（串行外设接口） ",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T14:35:33Z"
+  },
+  {
+    "id": "0-255d17d65a2d00ce349bec896eb5d3de!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "ringbuffer环形缓冲区",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-10-31T14:05:05Z"
+  },
+  {
+    "id": "0-62783fa964c208a625284e32669f4749!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "GPIO八种工作方式",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-04-07T11:55:49Z"
+  },
+  {
+    "id": "0-59e75587ed5d04a40a8d287236ca8000!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "AT24C02",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-03-24T13:17:48Z"
+  },
+  {
+    "id": "0-66cc38f18d85094d08b9b5d82b7686d1!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "微控制器和微处理器的区别",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-01-23T07:07:22Z"
+  },
+  {
+    "id": "0-8b57d235fa9505a51815fff23b1da40b!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "CRC校验",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2025-01-19T05:04:38Z"
+  },
+  {
+    "id": "0-664c165a5e56aa47a4493e32c1fd48c6!1-9E53C6D99C1E5AD1!se4bfe7dee5fb41d7ad3690f0d6524a94",
+    "title": "时钟",
+    "notebook": "单片机",
+    "section": "单片机",
+    "modified": "2024-09-12T10:12:50Z"
+  },
+  {
+    "id": "0-37a7353266ea4666a1171189f284bfd2!1-9E53C6D99C1E5AD1!scb506242d5ff4ede93982d26c312eb75",
+    "title": "Open MV颜色识别",
+    "notebook": "单片机",
+    "section": "视觉识别",
+    "modified": "2025-04-07T13:04:23Z"
+  },
+  {
+    "id": "0-656b377ffc804beea03680511f828869!1-9E53C6D99C1E5AD1!sef4106d2b8274c35951db7dd708563e8",
+    "title": "",
+    "notebook": "射频",
+    "section": "通信原理",
+    "modified": "2025-11-28T07:57:35.096Z"
+  },
+  {
+    "id": "0-f93bffcd14e140b09bb69bc70bf913de!1-9E53C6D99C1E5AD1!s092b203623414ddab91d659e2a42aa87",
+    "title": "",
+    "notebook": "模电技术基础",
+    "section": "新分区 1",
+    "modified": "2025-03-30T08:16:17.625Z"
+  },
+  {
+    "id": "0-f4dbc2749e3d4d4e9edf132486713cf4!1-9E53C6D99C1E5AD1!205",
+    "title": "第五章-反馈放大电路",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2025-11-17T05:29:10Z"
+  },
+  {
+    "id": "0-4887d51f95b240bca379c3247d259f6d!1-9E53C6D99C1E5AD1!205",
+    "title": "第二章-BJT三极管",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2025-10-31T07:40:38Z"
+  },
+  {
+    "id": "0-a7146bc9321b4d3b8809e3f1ed81e6d9!1-9E53C6D99C1E5AD1!205",
+    "title": "第四章-集成运算放大电路",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-07-02T11:44:40Z"
+  },
+  {
+    "id": "0-9b042745670b057636c8498d48963d34!1-9E53C6D99C1E5AD1!205",
+    "title": "字数统计",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-06-21T03:17:32Z"
+  },
+  {
+    "id": "0-d8719cd9ae4404b5144d664db171171a!1-9E53C6D99C1E5AD1!205",
+    "title": "常用电路(校赛复习）",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-06-21T02:03:32Z"
+  },
+  {
+    "id": "0-8d516d065b6c4421ae32ac8688759ac6!1-9E53C6D99C1E5AD1!205",
+    "title": "第三章-MOS场效应管",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-06-21T01:54:43Z"
+  },
+  {
+    "id": "0-f20cd299a9694d67866ba350fe708c08!1-9E53C6D99C1E5AD1!205",
+    "title": "第八章-直流稳压电源",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-06-21T01:50:02Z"
+  },
+  {
+    "id": "0-bf4284516bb04599ac1913c195eb8486!1-9E53C6D99C1E5AD1!205",
+    "title": "第一章-半导体的基本知识",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-06-14T02:43:59Z"
+  },
+  {
+    "id": "0-bb36092089624f58a2c5fc9f9daf36b5!1-9E53C6D99C1E5AD1!205",
+    "title": "第七章-信号产生电路",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-06-14T02:43:04Z"
+  },
+  {
+    "id": "0-6f015c351e72455d918078df80bec662!1-9E53C6D99C1E5AD1!205",
+    "title": "目录",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-06-07T02:36:51Z"
+  },
+  {
+    "id": "0-8629e1a43d914d4d9b4cc7f00c5fe812!1-9E53C6D99C1E5AD1!205",
+    "title": "第六章-功率放大电路",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-05-24T02:58:19Z"
+  },
+  {
+    "id": "0-4551a58bbf9f0dfc10e3c3d682437dc7!1-9E53C6D99C1E5AD1!205",
+    "title": "有源滤波电路(二阶)",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-05-11T01:50:58Z"
+  },
+  {
+    "id": "0-003b9468f89407ab19a64e1f75f4661e!1-9E53C6D99C1E5AD1!205",
+    "title": "比较器",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-05-11T01:38:45Z"
+  },
+  {
+    "id": "0-ce6f82e6732001160f204f2baabb518d!1-9E53C6D99C1E5AD1!205",
+    "title": "放大电路中的噪声与干扰",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-04-27T11:54:55Z"
+  },
+  {
+    "id": "0-8e33ae7611dc44389b721163fac44d0e!1-9E53C6D99C1E5AD1!205",
+    "title": "电流源",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-04-27T11:54:20Z"
+  },
+  {
+    "id": "0-38d0adcf9859497e8b56883f5fa79b6e!1-9E53C6D99C1E5AD1!205",
+    "title": "多级放大电路以及差分放大电路",
+    "notebook": "模电技术基础",
+    "section": "进入",
+    "modified": "2024-04-26T13:28:30Z"
+  },
+  {
+    "id": "0-7e78b81342006d44b07df473531e9d0a!1-9E53C6D99C1E5AD1!s83220a81d988450da4af10962b931756",
+    "title": "ai智能家居",
+    "notebook": "电子",
+    "section": "AI智能家居",
+    "modified": "2025-02-27T16:21:29Z"
+  },
+  {
+    "id": "0-59a4c8b953a3054224b90c08ea8e9958!1-9E53C6D99C1E5AD1!sb7c0b4ecbc404640a8a1bb057106bfa2",
+    "title": "AD23快捷键",
+    "notebook": "电子",
+    "section": "PCB技术",
+    "modified": "2025-11-08T11:28:09Z"
+  },
+  {
+    "id": "0-865e05e0fcd300b433a2d3fd2527ecc9!1-9E53C6D99C1E5AD1!sb7c0b4ecbc404640a8a1bb057106bfa2",
+    "title": "立创EDA专业版快捷键",
+    "notebook": "电子",
+    "section": "PCB技术",
+    "modified": "2025-11-08T11:27:50Z"
+  },
+  {
+    "id": "0-e20c57b79ffe9f4899b3deef818e1900!1-9E53C6D99C1E5AD1!sb7c0b4ecbc404640a8a1bb057106bfa2",
+    "title": "Track 走线、SMD Pad 表贴焊盘、TH Pad 通孔焊盘、Via 过孔、Copper 铜皮、Text 丝印、Hole 孔",
+    "notebook": "电子",
+    "section": "PCB技术",
+    "modified": "2025-07-26T00:41:32Z"
+  },
+  {
+    "id": "0-ced32ae08be84c6db32d1dc9bc0eb3f8!1-9E53C6D99C1E5AD1!s8f33154f2f4b4f8fb990ed7d86502723",
+    "title": "音频输出技术笔记：DAC 与 PWM 的区别及避坑指南",
+    "notebook": "电子",
+    "section": "功放类",
+    "modified": "2026-03-23T03:20:00Z"
+  },
+  {
+    "id": "0-01576a7a46a941b0917effd5c316747c!1-9E53C6D99C1E5AD1!sdf133d809dec4c38910d6b3f1b2e2d5f",
+    "title": "机械硬盘与固态硬盘",
+    "notebook": "电子",
+    "section": "杂项",
+    "modified": "2026-03-14T09:17:49Z"
+  },
+  {
+    "id": "0-857253d1fd464be59cebe19b7655f52f!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "电感(通直隔交)",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-11-08T19:23:36Z"
+  },
+  {
+    "id": "0-fa956bc8d4764d458f7800dadee7998f!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "电容：通交流，隔直流；通高频，阻低频",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-11-08T19:11:39Z"
+  },
+  {
+    "id": "0-9a4e3b669fb744348c46cb51e767664d!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "什么是耦合电容？什么是去耦电容？什么是旁路电容？",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-11-08T19:00:43Z"
+  },
+  {
+    "id": "0-e106c6f130dd441ead079c8b4387272f!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "电阻的作用：限流、降压、分压",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-11-08T18:34:25Z"
+  },
+  {
+    "id": "0-04cad3754565485a936f8b9ff399e997!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "磁珠",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-10-31T17:40:42Z"
+  },
+  {
+    "id": "0-0cdaa073086848cabc887264a517e198!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "二极管",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-10-31T17:36:30Z"
+  },
+  {
+    "id": "0-0956ddc610a949dda5945700d971e94c!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "MOS管",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-10-31T17:35:53Z"
+  },
+  {
+    "id": "0-d97f63c4db984bdbb5b1628c3b86358a!1-9E53C6D99C1E5AD1!s526ce6e6fe9c464d9c2156f0b57e0a3d",
+    "title": "三极管",
+    "notebook": "电子",
+    "section": "电子元器件",
+    "modified": "2025-10-31T17:35:48Z"
+  },
+  {
+    "id": "0-f0e636a42b5f4dd896b6a58e4f68a59d!1-9E53C6D99C1E5AD1!s0b840cbde1484b0fb11d20b3092261e9",
+    "title": "总结",
+    "notebook": "电源类",
+    "section": "DC-DC开关电源 拓扑结构",
+    "modified": "2025-10-31T17:33:56Z"
+  },
+  {
+    "id": "0-17e8c608c849453691ae00a19de862b3!1-9E53C6D99C1E5AD1!s0b840cbde1484b0fb11d20b3092261e9",
+    "title": "Buck与Boost组合电路",
+    "notebook": "电源类",
+    "section": "DC-DC开关电源 拓扑结构",
+    "modified": "2025-10-31T17:31:01Z"
+  },
+  {
+    "id": "0-6a66a495e8f443d396fb963f392ff291!1-9E53C6D99C1E5AD1!s0b840cbde1484b0fb11d20b3092261e9",
+    "title": "Buck与Buck-Boost组合电路",
+    "notebook": "电源类",
+    "section": "DC-DC开关电源 拓扑结构",
+    "modified": "2025-10-31T17:30:33Z"
+  },
+  {
+    "id": "0-e7a8303af0d7494e9d285f6ef7a842d6!1-9E53C6D99C1E5AD1!s0b840cbde1484b0fb11d20b3092261e9",
+    "title": "Buck-Boost极性反转升降压型",
+    "notebook": "电源类",
+    "section": "DC-DC开关电源 拓扑结构",
+    "modified": "2025-10-31T17:20:49Z"
+  },
+  {
+    "id": "0-9483c7cadb4449d280ca573b658fc9df!1-9E53C6D99C1E5AD1!s0b840cbde1484b0fb11d20b3092261e9",
+    "title": "Boost升压型",
+    "notebook": "电源类",
+    "section": "DC-DC开关电源 拓扑结构",
+    "modified": "2025-10-31T17:12:40Z"
+  },
+  {
+    "id": "0-5fb0efbe0605464a905eb70b533d31c6!1-9E53C6D99C1E5AD1!s0b840cbde1484b0fb11d20b3092261e9",
+    "title": "BUCK减压型",
+    "notebook": "电源类",
+    "section": "DC-DC开关电源 拓扑结构",
+    "modified": "2025-10-31T16:56:43Z"
+  },
+  {
+    "id": "0-8166310dcd9b4f8aadec0f02a470cc1d!1-9E53C6D99C1E5AD1!s1b0b8204a7034b5580b3cc0e84790b26",
+    "title": "EMC 与 EMI 的核心区别",
+    "notebook": "电源类",
+    "section": "EMC 设计",
+    "modified": "2025-10-31T17:41:27Z"
+  },
+  {
+    "id": "0-8897b04eeffa43c9be959d689c20e165!1-9E53C6D99C1E5AD1!s54889e5596e04debac8a5a86ae0bfd63",
+    "title": "选取原则",
+    "notebook": "电源类",
+    "section": "LDO(低压差线性稳压器）",
+    "modified": "2025-10-31T15:47:50Z"
+  },
+  {
+    "id": "0-bd0304610745492c8578d212905a22ab!1-9E53C6D99C1E5AD1!s54889e5596e04debac8a5a86ae0bfd63",
+    "title": "附加功能",
+    "notebook": "电源类",
+    "section": "LDO(低压差线性稳压器）",
+    "modified": "2025-10-31T15:43:11Z"
+  },
+  {
+    "id": "0-9b410cc48ace466086e50d876ba98bf9!1-9E53C6D99C1E5AD1!s54889e5596e04debac8a5a86ae0bfd63",
+    "title": "应用电路",
+    "notebook": "电源类",
+    "section": "LDO(低压差线性稳压器）",
+    "modified": "2025-10-31T15:42:37Z"
+  },
+  {
+    "id": "0-cd238eeb118845858d2ca04a5b2b75b4!1-9E53C6D99C1E5AD1!s54889e5596e04debac8a5a86ae0bfd63",
+    "title": "和DCDC区别",
+    "notebook": "电源类",
+    "section": "LDO(低压差线性稳压器）",
+    "modified": "2025-10-31T15:39:44Z"
+  },
+  {
+    "id": "0-2730be76551a440ead6fe9cb6b143390!1-9E53C6D99C1E5AD1!s54889e5596e04debac8a5a86ae0bfd63",
+    "title": "LDO(线性电源)",
+    "notebook": "电源类",
+    "section": "LDO(低压差线性稳压器）",
+    "modified": "2025-10-31T15:39:13Z"
+  },
+  {
+    "id": "0-1c1572811a984b01b8d5a1f095a6be84!1-9E53C6D99C1E5AD1!s78db112a2a8c4ab09abdf5f89600b674",
+    "title": "TVS保护电路",
+    "notebook": "电源类",
+    "section": "保护电路",
+    "modified": "2026-01-03T06:36:49Z"
+  },
+  {
+    "id": "0-e710f7f157d141f6b9a5b1e5f7cdf4f0!1-9E53C6D99C1E5AD1!scfd0f21c535d4914b4f32521a2f1ae3e",
+    "title": "",
+    "notebook": "电源类",
+    "section": "滤波电路",
+    "modified": "2025-10-31T15:51:42.065Z"
+  },
+  {
+    "id": "0-2e0d0e9a785d42ee89b604a2ec8706a9!1-9E53C6D99C1E5AD1!s5317823459484b67ad85614e4164b382",
+    "title": "",
+    "notebook": "电路设计",
+    "section": "ADC(DAC)采样电路",
+    "modified": "2025-12-04T10:21:36.856Z"
+  },
+  {
+    "id": "0-4ea681d831094b779a754f2062e66651!1-9E53C6D99C1E5AD1!s1131f3e8e8ea4a2086f3b06b53f62152",
+    "title": "MOS开关电路",
+    "notebook": "电路设计",
+    "section": "开关电路",
+    "modified": "2025-12-04T10:23:16Z"
+  },
+  {
+    "id": "0-c8c27fa6e6be4264b0cc3764ecec47f2!1-9E53C6D99C1E5AD1!s65db5276f0db467c8d6f54b6c010feed",
+    "title": "",
+    "notebook": "电路设计",
+    "section": "振荡电路",
+    "modified": "2025-12-04T10:21:11.179Z"
+  },
+  {
+    "id": "0-c58006bf7c1d44ab92e8de22ebd26fc3!1-9E53C6D99C1E5AD1!sfaf1a9bb01204b9c8ac7121827281171",
+    "title": "",
+    "notebook": "电路设计",
+    "section": "滤波电路",
+    "modified": "2025-12-04T10:21:03.939Z"
+  },
+  {
+    "id": "0-059bc095262648229692b6f899be5d36!1-9E53C6D99C1E5AD1!sbcd1748316c8404e9291404051df5716",
+    "title": "",
+    "notebook": "电路设计",
+    "section": "电源电路",
+    "modified": "2025-12-04T10:21:29.04Z"
+  },
+  {
+    "id": "0-95e38a1d66f84ff59b14b6e3c466f2b8!1-9E53C6D99C1E5AD1!s36064f6860994b88bebac9a4023df6f3",
+    "title": "RISC-V寄存器体系",
+    "notebook": "计算机",
+    "section": "RISC-V",
+    "modified": "2026-01-20T09:24:12Z"
+  },
+  {
+    "id": "0-df38bfe3df67432e907de6fdfbf839a7!1-9E53C6D99C1E5AD1!s36064f6860994b88bebac9a4023df6f3",
+    "title": "RISC-V(risk-five)架构命名规则",
+    "notebook": "计算机",
+    "section": "RISC-V",
+    "modified": "2026-01-20T08:59:31Z"
+  },
+  {
+    "id": "0-d421b79f978547a18e5e1c613ae6ef49!1-9E53C6D99C1E5AD1!sd8526955f47740d89a807e013a2020e2",
+    "title": "第一章计算机概述",
+    "notebook": "计算机",
+    "section": "计算机组成原理",
+    "modified": "2026-01-15T08:55:38Z"
+  },
+  {
+    "id": "0-3441d6bd097549778794d059f8ecb5c7!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "ZC 序列（Zadoff-Chu 序列）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-22T12:32:53Z"
+  },
+  {
+    "id": "0-89e9bf114f0248779d54ce66acb2988e!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "!星座图通信原理!",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-10T07:25:12Z"
+  },
+  {
+    "id": "0-abf59900c85246b387f51261a3f444e9!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "信道均衡（线性：ZF和MMSE，非线性：MLO和V-BLAST）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-09T08:02:33Z"
+  },
+  {
+    "id": "0-6be176b1861a4b018cf33444a4a49f28!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "无线信道衰落",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-09T07:00:41Z"
+  },
+  {
+    "id": "0-f7b5529aaebe4702b0e7960d62026881!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "信道估计（LS,MMSE,LMMSE算法）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-09T03:45:44Z"
+  },
+  {
+    "id": "0-362282e9f2224b9fa10d051bed8813bc!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "M序列(最长线性反馈移位寄存器序列)（gemini）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-08T06:54:55Z"
+  },
+  {
+    "id": "0-26ef74c2830c4d4e876e31e8599cabde!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "OFDM同步技术-符号定时偏差STO",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-07T13:17:34Z"
+  },
+  {
+    "id": "0-35169cd1d9f647b4a6bb9c62a5dad3a4!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "WiFi (802.11) 协议的同步模块（gemini）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-07T12:35:50Z"
+  },
+  {
+    "id": "0-dfa07d5f99344e52ab316254c4008130!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "同步(Synchronization)（gemini）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-07T12:19:44Z"
+  },
+  {
+    "id": "0-022f41e3a3d14cb99991480317ebd737!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "IQ调制硬件结构（gemini）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-07T12:09:46Z"
+  },
+  {
+    "id": "0-989c048d771449438dde28c95fab55b8!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "傅里叶变换",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-04T16:24:02Z"
+  },
+  {
+    "id": "0-29b056ef41204fa3a95fa60e65c8dd79!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "浅析IQ调制和解调(正交调制)",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-01T13:39:23Z"
+  },
+  {
+    "id": "0-911f04d9fe7a4befb66958615ddeb872!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "通信与系统（一）",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-01T13:39:23Z"
+  },
+  {
+    "id": "0-eeebc58435974a92a154b8ce50b09ad9!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "信源编码",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-01T13:39:23Z"
+  },
+  {
+    "id": "0-ca9866dd91cc4097bf0c9a2e847d2d3d!1-9E53C6D99C1E5AD1!sdee902dab68e44faa500bc13467293df",
+    "title": "信道编码",
+    "notebook": "通信",
+    "section": "1",
+    "modified": "2025-12-01T13:39:23Z"
+  },
+  {
+    "id": "0-ac850eb0660849bf9d21d3f10af9b761!1-9E53C6D99C1E5AD1!s8f5720a18dc64d48bc8196acc01345ef",
+    "title": "AFDM系统(Adaptive Frequency Division Multiplexing)自适应仿射频分复用",
+    "notebook": "通信",
+    "section": "AFDM(自适应频分复用)",
+    "modified": "2025-12-12T10:00:07Z"
+  },
+  {
+    "id": "0-ea32e887851c4167ba4ee99b506eec98!1-9E53C6D99C1E5AD1!s80f8fee137134466a9ec7945149fc2ff",
+    "title": "Modbus TCP协议（Modbus TCP Protocol）",
+    "notebook": "通信",
+    "section": "Modbus协议",
+    "modified": "2026-03-25T08:10:57Z"
+  },
+  {
+    "id": "0-5709689aac3e4a79b032fdafe0a91ed9!1-9E53C6D99C1E5AD1!s80f8fee137134466a9ec7945149fc2ff",
+    "title": "Modbus 地址对照表",
+    "notebook": "通信",
+    "section": "Modbus协议",
+    "modified": "2026-03-25T07:38:22Z"
+  },
+  {
+    "id": "0-9d94518855bd4d2cb68dc4e0ef69afe1!1-9E53C6D99C1E5AD1!s80f8fee137134466a9ec7945149fc2ff",
+    "title": "Modbus 功能码对照表",
+    "notebook": "通信",
+    "section": "Modbus协议",
+    "modified": "2026-03-25T07:31:27Z"
+  },
+  {
+    "id": "0-b13bf1602a6f4597a7104ccda3d01dd8!1-9E53C6D99C1E5AD1!s80f8fee137134466a9ec7945149fc2ff",
+    "title": "Modbus是什么",
+    "notebook": "通信",
+    "section": "Modbus协议",
+    "modified": "2026-03-23T09:25:58Z"
+  },
+  {
+    "id": "0-e1381610abe1462da6f89593e970d257!1-9E53C6D99C1E5AD1!s80f8fee137134466a9ec7945149fc2ff",
+    "title": "Modbus ASCII协议",
+    "notebook": "通信",
+    "section": "Modbus协议",
+    "modified": "2026-03-23T08:07:51Z"
+  },
+  {
+    "id": "0-a6acb330f0004ddf9b6e2a995966463c!1-9E53C6D99C1E5AD1!s80f8fee137134466a9ec7945149fc2ff",
+    "title": "Modbus RTC协议",
+    "notebook": "通信",
+    "section": "Modbus协议",
+    "modified": "2026-03-23T08:07:22Z"
+  },
+  {
+    "id": "0-0a15e8e9cd614fe08cadba37739de2f1!1-9E53C6D99C1E5AD1!s556544633fce449880b19b66455da296",
+    "title": "OFDM中循环前缀CP的作用",
+    "notebook": "通信",
+    "section": "OFDM(正交频分复用)",
+    "modified": "2025-12-02T14:05:29Z"
+  },
+  {
+    "id": "0-5640bbfcaf624d899daf619187fac544!1-9E53C6D99C1E5AD1!sbe445cb5f5f645278d8b5b9e543db7ed",
+    "title": "加性高斯白噪声信道 (AWGN)",
+    "notebook": "通信",
+    "section": "信道噪声（干扰）",
+    "modified": "2025-12-02T16:28:33Z"
+  },
+  {
+    "id": "0-feae60523bd44c23a613360c7ff67507!1-9E53C6D99C1E5AD1!sbe445cb5f5f645278d8b5b9e543db7ed",
+    "title": "信道噪声（干扰）",
+    "notebook": "通信",
+    "section": "信道噪声（干扰）",
+    "modified": "2025-12-02T16:03:19Z"
+  },
+  {
+    "id": "0-d145a947f6844fcba2bb7dae4f304dcd!1-9E53C6D99C1E5AD1!sc7d3a8c09a9e4a28b94e95296b56457a",
+    "title": "端到端网络互通的三大基石：子网划分、静态路由与防火墙规则",
+    "notebook": "通信",
+    "section": "网络通信",
+    "modified": "2026-03-24T16:46:38Z"
+  },
+  {
+    "id": "0-583201e108334ec2a636de38c6cdbb46!1-9E53C6D99C1E5AD1!sc7d3a8c09a9e4a28b94e95296b56457a",
+    "title": "网络通信学习",
+    "notebook": "通信",
+    "section": "网络通信",
+    "modified": "2026-03-24T16:15:08Z"
+  },
+  {
+    "id": "0-85321aa9da7c419ba1ee1cfff1a7a57c!1-9E53C6D99C1E5AD1!sa140059a4804404e92ccec6f00aa7b61",
+    "title": "AM调制解调(振幅调制)",
+    "notebook": "通信",
+    "section": "调制解调",
+    "modified": "2025-11-30T13:25:32Z"
+  },
+  {
+    "id": "0-34575adc44564eb496eb0082a19f2252!1-9E53C6D99C1E5AD1!s328fccef415e4d32b9ffaee5e9358b0d",
+    "title": "OneNote: 一站式笔记管理平台",
+    "notebook": "青 的笔记本",
+    "section": "快速笔记",
+    "modified": "2024-09-12T09:35:02Z"
+  },
+  {
+    "id": "0-ab842b6fb0da435d90de99f629281349!1-9E53C6D99C1E5AD1!s328fccef415e4d32b9ffaee5e9358b0d",
+    "title": "OneNote 基础",
+    "notebook": "青 的笔记本",
+    "section": "快速笔记",
+    "modified": "2024-09-12T09:35:02Z"
+  },
+  {
+    "id": "0-59eb191183334ddcb3144310cbff2fcf!1-9E53C6D99C1E5AD1!sb3773572ee1e47bd8fc1cc334310113d",
+    "title": "",
+    "notebook": "青 的笔记本",
+    "section": "快速笔记 2",
+    "modified": "2024-09-19T09:30:04.365Z"
+  },
+  {
+    "id": "0-a7dd0c3547d542d2be81b9223bdbb1fd!1-9E53C6D99C1E5AD1!sa3733e00dba24a34aeadecb5e365cd2e",
+    "title": "",
+    "notebook": "项目",
+    "section": "基于STM32H7的双光热成像融合",
+    "modified": "2026-03-16T09:22:54.893Z"
+  },
+  {
+    "id": "0-7d72115cf21240c28925e27e8ce024d4!1-9E53C6D99C1E5AD1!sc0818058f6bc4f879911386f74256709",
+    "title": "云台跟aibox联调",
+    "notebook": "项目",
+    "section": "惠州项目",
+    "modified": "2026-03-17T06:38:15Z"
+  }
+]
