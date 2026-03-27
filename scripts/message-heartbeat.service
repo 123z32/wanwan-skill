@@ -1,0 +1,10 @@
+[Unit]
+Description=Message Heartbeat Monitor
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/node /openclaw_data/.openclaw/workspace/scripts/message-heartbeat.js --check
+WorkingDirectory=/openclaw_data/.openclaw/workspace
+StandardOutput=append:/openclaw_data/.openclaw/workspace/memory/message-heartbeat.log
+StandardError=append:/openclaw_data/.openclaw/workspace/memory/message-heartbeat.log

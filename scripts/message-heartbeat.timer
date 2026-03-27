@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Message Heartbeat Monitor every 10 minutes
+Requires=message-heartbeat.service
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=10min
+Unit=message-heartbeat.service
+
+[Install]
+WantedBy=timers.target

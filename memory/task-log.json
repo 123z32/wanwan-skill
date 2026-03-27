@@ -1,0 +1,21 @@
+{
+  "schema": "task-log.v1",
+  "created": "2026-03-26T04:10:00+08:00",
+  "description": "记录任务执行情况，用于效率分析和自我改进",
+  "tasks": [],
+  "statistics": {
+    "totalTasks": 0,
+    "completedTasks": 0,
+    "failedTasks": 0,
+    "averageDurationMs": 0,
+    "lastUpdated": "2026-03-26T04:10:00+08:00"
+  },
+  "categories": {
+    "file-operations": { "count": 0, "successRate": 0 },
+    "web-search": { "count": 0, "successRate": 0 },
+    "api-calls": { "count": 0, "successRate": 0 },
+    "code-execution": { "count": 0, "successRate": 0 },
+    "memory-operations": { "count": 0, "successRate": 0 },
+    "feishu-operations": { "count": 0, "successRate": 0 }
+  }
+}
