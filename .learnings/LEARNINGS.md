@@ -51,6 +51,66 @@
 
 ---
 
+## [LRN-20260328-001] openclaw-timeout-config
+
+**Logged**: 2026-03-28T15:26:00+08:00
+**Priority**: high
+**Status**: resolved
+**Area**: config
+
+### Summary
+OpenClaw 超时配置的正确位置和字段名
+
+### Details
+- ❌ 错误：`gateway.timeouts.request/connect/idle` (不存在)
+- ❌ 错误：`providers.<name>.timeout` (不存在)
+- ✅ 正确：`agents.defaults.timeoutSeconds` (Agent 执行超时)
+- ✅ 正确：`tools.exec.timeoutSec` (exec 命令超时)
+- ✅ 正确：`env.shellEnv.timeoutMs` (Shell 环境超时)
+
+### Suggested Action
+修改超时配置时只使用文档中确认的字段
+
+### Metadata
+- Source: error
+- Related Files: /openclaw_data/config/config.json
+- Tags: timeout, config, openclaw
+- Pattern-Key: config.from.docs
+
+---
+
+## [LRN-20260328-002] heartbeat-setup
+
+**Logged**: 2026-03-28T15:43:00+08:00
+**Priority**: medium
+**Status**: resolved
+**Area**: config
+
+### Summary
+OpenClaw 心跳机制配置方法
+
+### Details
+- 心跳配置在 `agents.defaults.heartbeat`
+- 关键配置项：
+  - `every`: 间隔 (如 "1h", "30m")
+  - `target`: 发送渠道 (如 "feishu")
+  - `to`: 接收人 ID
+  - `activeHours`: 活跃时间段
+  - `prompt`: 心跳提示词
+- 正常回复 `HEARTBEAT_OK` 不发送消息
+- 有异常时才发送警报
+
+### Suggested Action
+心跳机制已配置完成，运行正常
+
+### Metadata
+- Source: conversation
+- Related Files: /openclaw_data/config/config.json, HEARTBEAT.md
+- Tags: heartbeat, automation, monitoring
+- Pattern-Key: heartbeat.monitoring
+
+---
+
 <!-- 在此追加新的学习条目 -->
 
 

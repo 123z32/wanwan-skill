@@ -59,6 +59,39 @@
 
 ---
 
+## [ERR-20260328-001] config-validation
+
+**Logged**: 2026-03-28T15:25:00+08:00
+**Priority**: high
+**Status**: resolved
+**Area**: config
+
+### Summary
+修改 OpenClaw 配置前没有先查文档，添加了无效的配置项
+
+### Error
+```
+Invalid config at /openclaw_data/config/config.json:
+  × cron: Unrecognized key: "jobs"
+```
+
+### Context
+- 尝试添加 `cron.jobs` 配置项
+- 没有先查阅 docs.openclaw.ai 确认配置格式
+- 凭想象添加了不存在的配置字段
+
+### Suggested Fix
+- ✅ 已解决：修改配置前必须先查文档
+- 使用 `openclaw config validate` 验证配置
+- 参考 docs.openclaw.ai/gateway/configuration-examples
+
+### Metadata
+- Reproducible: yes
+- Related Files: /openclaw_data/config/config.json
+- Pattern-Key: validate.before.edit
+
+---
+
 <!-- 在此追加新的错误条目 -->
 
 
