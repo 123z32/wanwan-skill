@@ -1,0 +1,46 @@
+[Unit]
+Description=OpenClaw Gateway Service
+Documentation=https://docs.openclaw.ai
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=node
+WorkingDirectory=/home/node/.openclaw/workspace
+
+# 启动命令
+ExecStart=/usr/bin/openclaw gateway
+ExecReload=/bin/kill -HUP $MAINPID
+
+# 自动重启配置
+Restart=always
+RestartSec=10
+
+# 重启次数限制（30 秒内最多重启 3 次）
+StartLimitIntervalSec=30
+StartLimitBurst=3
+
+# 超时设置
+TimeoutStartSec=60
+TimeoutStopSec=30
+
+# 资源限制
+LimitNOFILE=65535
+LimitNPROC=4096
+
+# 日志
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=openclaw-gateway
+
+# 环境变量
+Environment="NODE_ENV=production"
+Environment="OPENCLAW_WORKSPACE=/home/node/.openclaw/workspace"
+
+# 健康检查（可选）
+ExecStartPost=/bin/sleep 5
+ExecStartPost=/home/node/.openclaw/workspace/scripts/healthcheck.sh
+
+[Install]
+WantedBy=multi-user.target
