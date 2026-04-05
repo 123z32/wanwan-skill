@@ -35,15 +35,9 @@
 
 **配置位置**: `bindings[]`
 
-**当前绑定**:
-```
-coder <- feishu accountId=wanwan
-```
-
 **说明**:
-- 婳婳 (coder) 绑定到飞书 wanwan 账号
-- 所有 wanwan 账号的消息（包括私聊和群组）都会路由到婳婳
-- 群组消息需要 @婳婳 才会响应（requireMention: true）
+- 支持按渠道/联系人路由到不同智能体
+- 群组消息可配置是否需要 @提及才响应
 
 **CLI 管理**:
 ```bash
@@ -51,10 +45,10 @@ coder <- feishu accountId=wanwan
 openclaw agents bindings
 
 # 添加绑定
-openclaw agents bind --agent coder --bind feishu:wanwan
+openclaw agents bind --agent <agent> --bind <channel>:<target>
 
 # 移除绑定
-openclaw agents unbind --agent coder --bind feishu:wanwan
+openclaw agents unbind --agent <agent> --bind <channel>:<target>
 ```
 
 ---
