@@ -46,11 +46,11 @@
 - **成果**: `stock-market-pro` skill 支持 A 股/港股/美股/基金实时查询
 - **关键点**: A 股涨红跌绿（与美股相反），天天基金估值接口 `fundgz.1234567.com.cn`
 
-### 2. OneNote 全量导出到 RAG 知识库
+### 2. OneNote 全量导出
 - **工具**: Microsoft Graph API via Maton 网关
-- **成果**: 214 条笔记（587,309 字）成功导入个人知识库
+- **成果**: 214 条笔记（587,309 字）成功导出为 Markdown
 - **技术**: HTML → Markdown 转换 + 标签分类 + 速率控制 (0.3s/请求)
-- **RAG 系统**: 从 33 条 → 247 条知识块
+- **备份位置**: `/openclaw_data/.openclaw/workspace/onenote-export/`
 
 ### 3. 本地 Embedding 配置
 - **方案**: Ollama + nomic-embed-text

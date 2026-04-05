@@ -99,22 +99,6 @@
 - **A 股显示**: 已修正为涨红跌绿
 - **状态**: ✅ 已完成
 
-### 个人知识库 RAG 系统 (2026-03-24)
-- **服务地址**: localhost:9900
-- **技术栈**: Node.js + Express + JSON 向量库 + DashScope API
-- **Embedding**: text-embedding-v3
-- **LLM**: qwen-plus
-- **接口**: /api/add, /api/search, /api/ask, /api/index, /api/stats, /api/health
-- **已索引**: 电源设计.md + 通信协议.md（33 条知识块）
-- **状态**: ✅ 已完成并测试通过
-
-### OneNote 全量导出 (2026-03-25)
-- **成功导入**: 214 条笔记（587,309 字）
-- **覆盖范围**: 20/22 笔记本（跳过待办事项类）
-- **RAG 系统**: 从 33 条 → 247 条知识块
-- **Markdown 备份**: `/openclaw_data/.openclaw/workspace/onenote-export/`
-- **状态**: ✅ 已完成
-
 ### OpenClaw 升级 (2026-03-26)
 - **版本**: 2026.3.13 → 2026.3.24
 - **Nodes**: 手机连接支持已配置
@@ -137,8 +121,7 @@
 - **2026-03-21**: SCADA/Modbus 系统修复（LabVIEW 错误 538 解决 + 按需读取优化）
 - **2026-03-22**: 技术调研（RuVector/RuView/WorldMonitor）
 - **2026-03-23**: GitHub 仓库建立
-- **2026-03-24**: 个人知识库 RAG 系统搭建完成 + AI 前沿学习日（黄仁勋宣称 AGI 已实现 + OpenClaw 被公开提及）
-- **2026-03-25**: OneNote 全量导出（214 条/587K 字）+ RAG 知识库扩充至 247 条
+- **2026-03-24**: AI 前沿学习日（黄仁勋宣称 AGI 已实现 + OpenClaw 被公开提及）
 - **2026-03-26**: OpenClaw 升级 (2026.3.24)
 - **2026-03-27**: 本周学习总结系统上线（W13 总结完成）+ 基金日报播报自动化
 - **2026-03-31**: 从 wanwan-skill 仓库恢复备份（系统重建 + 配置恢复）

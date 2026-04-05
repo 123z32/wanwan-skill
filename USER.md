@@ -10,7 +10,7 @@
 
 - 关注技术领域：电子、通信、电源设计、嵌入式系统
 - 设备：AGX Thor (128GB VRAM)、树莓派 5
-- 项目：SCADA/Modbus 系统、个人知识库 RAG、OpenClaw 助手配置
+- 项目：SCADA/Modbus 系统、OpenClaw 助手配置
 
 ---
-*最后更新：2026-03-31*
+*最后更新：2026-04-05*
