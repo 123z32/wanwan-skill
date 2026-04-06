@@ -41,10 +41,10 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ### Infrastructure
 
-- **AGX Thor** (深圳): 128GB VRAM, runs Ollama with LAN pass-through feature
-- **树莓派 5**: 8GB RAM + 128GB SSD, hosts OpenClaw container
-- **Connection**: Tailscale VPN, remote Ollama models passed through without API key
-- **Runtime**: Agent runs in Docker container for isolation (safer than bare metal)
+- **树莓派 5** (惠州): 8GB RAM + 128GB SSD, hosts OpenClaw container
+- **AGX Thor** (深圳): 128GB VRAM（目前未使用）
+- **Runtime**: Agent runs in Docker container for isolation
+- **Model**: Qwen3.5-Plus (云端 API)
 
 ### Location
 

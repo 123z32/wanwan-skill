@@ -13,8 +13,11 @@
 ---
 
 ## 🏗️ 系统架构
-- **AGX Thor** (深圳): 128GB VRAM, 运行 Ollama
+- **树莓派 5**: 8GB RAM + 128GB SSD
+- **部署位置**: 惠州（出差项目）
 - **运行时**: Docker 容器隔离
+- **AGX Thor** (深圳): 128GB VRAM（目前未使用）
+- **模型**: Qwen3.5-Plus（云端 API）
 
 ---
 
