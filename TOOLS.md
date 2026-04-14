@@ -46,6 +46,13 @@ Add whatever helps you do your job. This is your cheat sheet.
 - **Runtime**: Agent runs in Docker container for isolation
 - **Model**: Qwen3.6-Plus (云端 API)
 
+### 路径映射（重要！）
+
+- **容器内路径**: `/home/node/.openclaw/workspace/`
+- **宿主机路径**: `/home/wanwanhua/openclaw_data/workspace/`
+- ⚠️ 给张任何需要在宿主机执行的命令时，必须使用宿主机路径！
+- 文件通过 Docker volume 挂载，两边内容同步
+
 ### Location
 
 - **定位工具**: `/openclaw_data/.openclaw/workspace/scripts/locate.sh`

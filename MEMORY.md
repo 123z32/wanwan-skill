@@ -190,6 +190,12 @@
 - **配置**: `/openclaw_data/config/config.json`
 - **工作区**: `/openclaw_data/.openclaw/workspace/`
 
+### 🗺️ 容器 vs 宿主机路径映射
+
+- **容器内**: `/home/node/.openclaw/workspace/`
+- **宿主机**: `/home/wanwanhua/openclaw_data/workspace/`
+- ⚠️ 给用户任何需要在宿主机执行的命令时，必须转换路径！
+
 ---
 
 *此文件会定期更新，记录重要信息和决策*
